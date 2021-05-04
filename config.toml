@@ -13,7 +13,7 @@ style = "default"
 description = "Describe your website"
 copyright = "&copy;2016 Your name or company"
 sidebarAbout = [
-  "I am a creative illustrator and graphic designer with more than 10 years of experience.",
+  "We are here to have fun",
   "Originally from Toronto, currently based in London."
 ]
 email = "you@yoursite.com"
