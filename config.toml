@@ -9,6 +9,7 @@ baseURL = ""
 publishDir = "public"
 
 [params]
+logo = "img/avatar-icon.png"
 style = "default"
 description = "Describe your website"
 copyright = "&copy;2016 Your name or company"
