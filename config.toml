@@ -1,5 +1,5 @@
 baseurl = "https://example.org/"
-title = "Social Data Analysis"
+title = "Social Data Analysis and Viz"
 theme = "creative portfolio"
 languageCode = "en-us"
 disqusShortname = ""
