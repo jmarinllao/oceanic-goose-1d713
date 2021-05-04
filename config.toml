@@ -9,10 +9,10 @@ baseURL = ""
 publishDir = "public"
 
 [params]
-logo = "/static/SDAV_interface/LondonCOVTitle.png"
+logo = "img/SDAV_interface/LondonCOVTitle.png"
 style = "default"
 description = "Describe your website"
-copyright = "&copy;2016 Alessandro Contini and Josep Marin-Llaó"
+copyright = "&copy;2016 Your name or company"
 sidebarAbout = [
   "We are here to have fun",
   "Originally from Toronto, currently based in London."
