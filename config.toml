@@ -9,7 +9,6 @@ baseURL = ""
 publishDir = "public"
 
 [params]
-logo = "img/SDAV_interface/LondonCOVTitle.png"
 style = "default"
 description = "Describe your website"
 copyright = "&copy;2016 Your name or company"
