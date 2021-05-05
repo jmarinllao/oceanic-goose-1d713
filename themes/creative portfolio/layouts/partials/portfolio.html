@@ -1,9 +1,9 @@
-<div class="col-xs-12 content-column">
+<div class="col-xs-6 content-column">
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
         <div class="row">
           {{ range .Data.Pages }}
-              <div class="col-xs-4 masonry-item">
+              <div class="col-xs-5 masonry-item">
                   <div class="box-masonry">
                       {{ if and (isset .Params "image") .Params.image }}
                         {{ if eq .Params.showonlyimage true }}
