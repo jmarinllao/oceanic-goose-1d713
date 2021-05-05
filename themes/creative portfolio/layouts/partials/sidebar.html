@@ -1,7 +1,7 @@
 <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <h1 class="sidebar-heading"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-    <img src="/img/interface/LondonCOV.png" alt="Italian Trulli">
+    <img src="/img/interface/LondonCOV.png" alt="Italian Trulli" width="500" height="600">
     {{ range .Site.Params.sidebarAbout }}
       <p class="sidebar-p">{{ . | safeHTML }}</p>
     {{ end }}
