@@ -19,7 +19,7 @@ sidebarAbout = [
 email = "you@yoursite.com"
 
   [[params.navlinks]]
-  image = "interface/LondonCOVTitle.png"
+  image = "img/LondonCOVTitle.png"
 
   name = "Home"
   url = "portfolio/"
