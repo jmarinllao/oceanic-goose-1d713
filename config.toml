@@ -14,9 +14,9 @@ description = "Describe your website"
 copyright = "&copy;2016 Your name or company"
 sidebarAbout = [
   "We are here to have fun",
-  "Originally from Toronto, currently bazsed in London."
+  "Originally from Toronto, currently based in London."
 ]
-email = "you@yoursite.com"s
+email = "you@yoursite.com"
 
   [[params.navlinks]]
   image = "img/interface/LondonCOVTitle.png"
