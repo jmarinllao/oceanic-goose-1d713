@@ -16,10 +16,11 @@ sidebarAbout = [
   "We are here to have fun",
   "Originally from Toronto, currently based in London."
 ]
-image = "interface/LondonCOVTitle.png"
 email = "you@yoursite.com"
 
   [[params.navlinks]]
+  image = "interface/LondonCOVTitle.png"
+
   name = "Home"
   url = "portfolio/"
   home = true
