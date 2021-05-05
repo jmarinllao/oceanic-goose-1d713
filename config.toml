@@ -7,7 +7,7 @@ googleAnalytics = ""
 themesDir = "themes"
 baseURL = ""
 publishDir = "public"
-image = "interface/business-card-26.jpg"
+image = "static/interface/business-card-26.jpg"
 
 [params]
 style = "default"
