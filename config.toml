@@ -10,7 +10,7 @@ publishDir = "public"
 picture  = "static/img/portfolio/business-card-26.jpg"
 
 [params]
-style = "default"
+style = "default2"
 description = "Describe your website"
 copyright = "&copy;2016 Your name or company"
 sidebarAbout = [
