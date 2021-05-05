@@ -9,17 +9,6 @@ baseURL = ""
 publishDir = "public"
 picture  = "static/img/portfolio/business-card-26.jpg"
 
-[menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-
-    [[menu.main]]
-        name = "Twitter"
-        url = "https://twitter.com/thingsym"
-        weight = 2
-        
 [params]
 style = "default"
 description = "Describe your website"
