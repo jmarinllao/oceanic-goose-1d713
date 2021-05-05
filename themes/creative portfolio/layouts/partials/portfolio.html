@@ -1,15 +1,15 @@
-<div class="col-md-3 content-column">
+<div class="col-xs-12 col-sm-8 col-md-9 content-column">
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
         <div class="row">
           {{ range .Data.Pages }}
-              <div class="col-lg-3 masonry-item">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
                   <div class="box-masonry">
                       {{ if and (isset .Params "image") .Params.image }}
                         {{ if eq .Params.showonlyimage true }}
-                        <a href="{{ .Permalink }}" title="" class="box-masonry-image ">
+                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
                         {{ else }}
-                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-icon">
+                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
                         {{ end }}
                             <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
                         </a>
