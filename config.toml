@@ -15,7 +15,7 @@ description = "Describe your website"
 copyright = "&copy;2016 Your name or company"
 sidebarAbout = [
   "We are here to have fun",
-  "Originally from La Cava, currently based in London."
+  "Originally from La Cava, currently based yet in La Cava due to COVID."
 ]
 email = "you@yoursite.com"
 
