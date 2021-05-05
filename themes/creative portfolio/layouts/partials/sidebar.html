@@ -9,6 +9,7 @@
         <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
       {{ end }}
     </ul>
+    {{ if and (isset .Params "image") .Params.image }}
     {{ partial "social_buttons_in_sidebar.html" . }}
 
     <div class="copyright">
