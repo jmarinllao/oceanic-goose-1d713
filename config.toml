@@ -7,6 +7,7 @@ googleAnalytics = ""
 themesDir = "themes"
 baseURL = ""
 publishDir = "public"
+image = "interface/LondonCOVTitle.png"
 
 [params]
 style = "default"
