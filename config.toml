@@ -16,7 +16,7 @@ sidebarAbout = [
   "We are here to have fun",
   "Originally from Toronto, currently based in London."
 ]
-image = "SDAimage.png"
+image = "img/SDAV?SDAimage.png"
 email = "you@yoursite.com"
 
   [[params.navlinks]]
