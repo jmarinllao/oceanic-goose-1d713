@@ -2368,4 +2368,780 @@ color: #000000 !important;
 	function setCookie(c_name, value) {
 		var exdate = new Date();
 		exdate.setDate(exdate.getDate() + 365);
-		document.cookie = c_nam
+		document.cookie = c_name + "=" + escape(value) + ";expires=" + exdate.toUTCString() + ";path=/;domain=cnn.com";
+		return;
+	}
+
+	function checkCookie(set_value) {
+		if (getCookie('SelectedEdition') == null || getCookie('SelectedEdition') == "") {
+			setCookie('SelectedEdition', set_value);
+		}
+		return;
+	}
+
+	try {
+		checkCookie('www');
+	} catch(e) {
+	}
+</script>
+
+
+<div>
+	<div class="_55afeaf6">
+		<footer id="cnnmoney_footer" class="_4c3b035b">
+			<div class="_05812abd">
+				<span id="cnnmoney_footer_logo" class="f9786d8e"><a class="a2419916" target="_self" rel="noopener" href="//money.cnn.com/"><img class="f234abe9" src="//i.cdn.turner.com/money/.element/cnnm-3.0/img/logo/cnnmoney_blue.svg"></a></span>
+			</div>
+			<div class="_7dc7c77c" id="cnnmoney_footer_links">
+				<a target="_blank" rel="noopener" href="//money.cnn.com/services/speakup/speakup.html">Contact Us</a>
+				<a target="_blank" rel="noopener" href="//money.cnn.com/services/closed-captioning.html">Closed Captioning</a>
+		        <a href="javascript: window.OneTrust.ToggleInfoDisplay();" id="js-gdpr-cookiesetting" class="gdpr-cookiesetting-link unhide">Cookie Settings</a>
+				<a target="_blank" rel="noopener" href="//money.cnn.com/services/sitemap/">Site Map</a>
+			</div>
+			<div id="cnnmoney_footer_socialshare">
+				<a href="//www.facebook.com/cnnmoney" target="_blank" rel="noopener" class="d108d922" style="margin-right:30px">
+				<svg width="18" height="18" viewBox="0 0 20 20" xmlns="https://www.w3.org/2000/svg">
+					<path d="M1.103809,0 C0.494128755,0 0,0.494128755 0,1.103809 L0,18.896191 C0,19.5057963 0.494128755,20.0000749 1.103809,20.0000749 L10.682668,20.0000749 L10.682668,12.2549776 L8.07624001,12.2549776 L8.07624001,9.23655084 L10.682668,9.23655084 L10.682668,7.01057349 C10.682668,4.42737566 12.260373,3.02074981 14.5648085,3.02074981 C15.6686924,3.02074981 16.6173837,3.10287979 16.893823,3.13959849 L16.893823,5.83924704 L15.2955855,5.8399964 C14.0423539,5.8399964 13.7996358,6.43551372 13.7996358,7.30941872 L13.7996358,9.23655084 L16.7886127,9.23655084 L16.3994695,12.2549776 L13.7996358,12.2549776 L13.7996358,20.0000749 L18.896191,20.0000749 C19.5057963,20.0000749 20,19.5057963 20,18.896191 L20,1.103809 C20,0.494128755 19.5057963,0 18.896191,0 L1.103809,0 Z" fill="#313131"></path>
+				</svg></a><a href="//twitter.com/CNNMoney" target="_blank" rel="noopener" class="d108d922" style="margin-right:30px">
+				<svg width="23" height="18" viewBox="0 0 30 24" version="1.1" xmlns="https://www.w3.org/2000/svg">
+					<path fill="#313131" d="M29.536,2.84 C28.449,3.323 27.281,3.649 26.057,3.793 C27.307,3.044 28.266,1.856 28.721,0.442 C27.552,1.135 26.253,1.641 24.873,1.912 C23.769,0.739 22.193,0 20.448,0 C17.105,0 14.389,2.712 14.389,6.06 C14.389,6.534 14.442,6.998 14.547,7.44 C9.511,7.185 5.048,4.773 2.06,1.109 C1.537,2.003 1.237,3.045 1.237,4.154 C1.237,6.257 2.31,8.112 3.935,9.198 C2.941,9.168 2.006,8.895 1.191,8.44 L1.191,8.516 C1.191,11.451 3.28,13.901 6.05,14.457 C5.541,14.595 5.007,14.669 4.454,14.669 C4.065,14.669 3.683,14.631 3.314,14.561 C4.085,16.969 6.321,18.719 8.976,18.769 C6.896,20.392 4.287,21.361 1.451,21.361 C0.962,21.361 0.473,21.335 -1.77635684e-15,21.277 C2.684,22.998 5.867,24 9.292,24 C20.437,24 26.529,14.77 26.529,6.762 C26.529,6.499 26.523,6.237 26.513,5.977 C27.695,5.122 28.725,4.056 29.536,2.84 Z" id="Shape"></path>
+				</svg></a><a href="//www.instagram.com/cnnmoney" target="_blank" rel="noopener" class="d108d922" style="margin-right:30px">
+				<svg width="18" height="18" viewBox="0 0 20 20" xmlns="https://www.w3.org/2000/svg">
+					<defs>
+						<polygon points="9.99683532 19.9861889 0 19.9861889 0 0.00630516673 9.99683532 0.00630516673 19.9936706 0.00630516673 19.9936706 19.9861889"></polygon>
+					</defs>
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g>
+							<g transform="translate(0.000000, 0.033350)">
+								<g>
+									<g></g><path d="M9.99684524,0.00630516673 C7.28184524,0.00630516673 6.94140873,0.0178051564 5.87517857,0.0664223539 C4.81109127,0.114920586 4.0844246,0.283811813 3.4485119,0.530744349 C2.79113095,0.786044119 2.23363095,1.12763347 1.67787698,1.68300366 C1.12212302,2.2384135 0.780297619,2.79552852 0.524821429,3.45245551 C0.277678571,4.08788942 0.108710317,4.81409394 0.0601388889,5.87740677 C0.0114880952,6.9429403 -1.98412698e-05,7.28314171 -1.98412698e-05,9.99626686 C-1.98412698e-05,12.7093523 0.0114880952,13.0495538 0.0601388889,14.1150873 C0.108710317,15.1784001 0.277678571,15.9046046 0.524821429,16.5400385 C0.780297619,17.1969655 1.12212302,17.7540806 1.67787698,18.3094904 C2.23363095,18.8648606 2.79113095,19.2064499 3.4485119,19.4617497 C4.0844246,19.7086822 4.81109127,19.8775735 5.87517857,19.9260717 C6.94140873,19.9747286 7.28184524,19.9861889 9.99684524,19.9861889 C12.7118452,19.9861889 13.0522421,19.9747286 14.1185119,19.9260717 C15.1825992,19.8775735 15.9092659,19.7086822 16.5451786,19.4617497 C17.2025595,19.2064499 17.7600595,18.8648606 18.3158135,18.3094904 C18.8715675,17.7540806 19.2133929,17.1969655 19.468869,16.5400385 C19.7160119,15.9046046 19.8849802,15.1784001 19.9335516,14.1150873 C19.9822024,13.0495538 19.9936706,12.7093523 19.9936706,9.99626686 C19.9936706,7.28314171 19.9822024,6.9429403 19.9335516,5.87740677 C19.8849802,4.81409394 19.7160119,4.08788942 19.468869,3.45245551 C19.2133929,2.79552852 18.8715675,2.2384135 18.3158135,1.68300366 C17.7600595,1.12763347 17.2025595,0.786044119 16.5451786,0.530744349 C15.9092659,0.283811813 15.1825992,0.114920586 14.1185119,0.0664223539 C13.0522421,0.0178051564 12.7118452,0.00630516673 9.99684524,0.00630516673 M9.99684524,1.80629148 C12.666131,1.80629148 12.9822817,1.81648285 14.0364087,1.86454487 C15.0110913,1.90895862 15.5404167,2.07170331 15.8927183,2.20851353 C16.3593056,2.3897375 16.6923611,2.60621489 17.0421627,2.95581458 C17.3919643,3.30537461 17.608631,3.63816052 17.7899405,4.10446527 C17.9268452,4.45648392 18.0897024,4.98544378 18.1341865,5.95945325 C18.1822817,7.0128523 18.1924405,7.32882443 18.1924405,9.99626686 C18.1924405,12.6636696 18.1822817,12.9796418 18.1341865,14.0330408 C18.0897024,15.0070503 17.9268452,15.5360101 17.7899405,15.8880288 C17.608631,16.3543335 17.3919643,16.6871194 17.0421627,17.0366795 C16.6923611,17.3862792 16.3593056,17.6027566 15.8927183,17.7839805 C15.5404167,17.9207908 15.0110913,18.0835354 14.0364087,18.1279492 C12.9824405,18.1760112 12.6662897,18.1862026 9.99684524,18.1862026 C7.32740079,18.1862026 7.01125,18.1760112 5.95728175,18.1279492 C4.98259921,18.0835354 4.45323413,17.9207908 4.10097222,17.7839805 C3.63438492,17.6027566 3.30132937,17.3862792 2.95152778,17.0366795 C2.60172619,16.6871194 2.38505952,16.3543335 2.20371032,15.8880288 C2.06684524,15.5360101 1.9039881,15.0070503 1.85950397,14.0330408 C1.81140873,12.9796418 1.80125,12.6636696 1.80125,9.99626686 C1.80125,7.32882443 1.81140873,7.0128523 1.85950397,5.95945325 C1.9039881,4.98544378 2.06684524,4.45648392 2.20371032,4.10446527 C2.38505952,3.63816052 2.60172619,3.30537461 2.95152778,2.95581458 C3.30132937,2.60621489 3.63438492,2.3897375 4.10097222,2.20851353 C4.45323413,2.07170331 4.98259921,1.90895862 5.95724206,1.86454487 C7.01140873,1.81648285 7.32755952,1.80629148 9.99684524,1.80629148" fill="#313131" fill-rule="nonzero"></path>
+								</g>
+							</g><path d="M9.99684524,13.3595776 C8.1564881,13.3595776 6.66454365,11.8687031 6.66454365,10.0296168 C6.66454365,8.1904909 8.1564881,6.69961638 9.99684524,6.69961638 C11.8372024,6.69961638 13.3291071,8.1904909 13.3291071,10.0296168 C13.3291071,11.8687031 11.8372024,13.3595776 9.99684524,13.3595776 M9.99684524,4.89963007 C7.16168651,4.89963007 4.86331349,7.19637627 4.86331349,10.0296168 C4.86331349,12.8628177 7.16168651,15.1595639 9.99684524,15.1595639 C12.832004,15.1595639 15.130377,12.8628177 15.130377,10.0296168 C15.130377,7.19637627 12.832004,4.89963007 9.99684524,4.89963007" fill="#313131" fill-rule="nonzero"></path><path d="M16.5328095,4.69694077 C16.5328095,5.35902293 15.9957063,5.89571555 15.3332063,5.89571555 C14.6706667,5.89571555 14.1335635,5.35902293 14.1335635,4.69694077 C14.1335635,4.03485861 14.6706667,3.49816599 15.3332063,3.49816599 C15.9957063,3.49816599 16.5328095,4.03485861 16.5328095,4.69694077" fill="#313131" fill-rule="nonzero"></path>
+						</g>
+					</g>
+				</svg></a><a href="//www.youtube.com/user/CNNMoney" target="_blank" rel="noopener" class="d108d922" style="margin-right:30px">
+				<svg width="18" height="18" viewBox="0 0 21 16" version="1.1" xmlns="https://www.w3.org/2000/svg">
+					<path fill="#313131" d="M10.29,0 C0.176987999,0 0,0.899345997 0,7.92329997 C0,14.9472539 0.176987999,15.8465999 10.29,15.8465999 C20.4030119,15.8465999 20.5799999,14.9472539 20.5799999,7.92329997 C20.5799999,0.899345997 20.4030119,0 10.29,0 Z M13.5879449,8.26698597 L8.96773497,10.42377 C8.56333797,10.611048 8.23199997,10.401132 8.23199997,9.95454596 L8.23199997,5.89205398 C8.23199997,5.44649698 8.56333797,5.23555198 8.96773497,5.42282998 L13.5879449,7.57961397 C13.9923419,7.76894997 13.9923419,8.07764997 13.5879449,8.26698597 Z"></path>
+				</svg></a><a href="//money.cnn.com/services/rss/" target="_blank" rel="noopener" class="d108d922" style="margin-right:">
+				<svg width="18" height="18" viewBox="0 0 16 16" version="1.1" xmlns="https://www.w3.org/2000/svg">
+					&gt;<path d="M5.818142,13.090773 C5.818142,14.697252 4.51556,15.999834 2.909081,15.999834 C1.302602,15.999834 1.99999999e-05,14.697252 1.99999999e-05,13.090773 C1.99999999e-05,11.484295 1.302602,10.181713 2.909081,10.181713 C4.51556,10.181713 5.818142,11.484295 5.818142,13.090773 Z M10.303877,15.999834 C10.243878,15.999834 10.182788,15.992561 10.121697,15.977289 C9.720611,15.87729 9.475522,15.470021 9.575885,15.067844 C9.69952,14.569303 9.773337,13.55695 9.773337,12.968593 C9.773337,9.251904 6.754096,6.228299 3.042862,6.228299 C2.531958,6.228299 1.762511,6.286117 1.279607,6.395934 C0.879611,6.487933 0.474525,6.235208 0.382526,5.830849 C0.290527,5.426489 0.543615,5.023948 0.947247,4.931949 C1.568331,4.790496 2.447231,4.727224 3.042862,4.727224 C7.580996,4.727224 11.272594,8.424276 11.272594,12.968593 C11.272594,13.682404 11.184595,14.811119 11.030415,15.430385 C10.946052,15.771836 10.639874,15.999834 10.303877,15.999834 Z M15.053828,15.999834 C15.010556,15.999834 14.96692,15.996198 14.92292,15.988561 C14.506561,15.916562 14.228018,15.520203 14.300018,15.103843 C14.421107,14.402032 14.470561,13.855856 14.470561,13.219499 C14.470561,6.774112 9.232434,1.53053 2.793592,1.53053 C2.091053,1.53053 1.661967,1.590165 0.906702,1.732709 C0.489615,1.811254 0.091801,1.538166 0.013257,1.122534 C-0.064561,0.707265 0.208164,0.306906 0.622705,0.228725 C1.332879,0.094908 1.903419,0 2.793592,0 C10.075698,0 16,5.93012 16,13.219499 C16,13.939492 15.941819,14.581667 15.806184,15.364932 C15.742184,15.736928 15.418915,15.999834 15.053828,15.999834 Z" fill="#313131"></path>
+				</svg></a>
+			</div>
+			<p class="fe31535c">
+				Most stock quote data provided by BATS. Market indices are shown in real time, except for the DJIA, which is delayed by two minutes. All times are ET. Disclaimer. Morningstar: Â© 2018
+				Morningstar, Inc. All Rights Reserved. Factset: FactSet Research Systems Inc. 2018. All rights reserved. Chicago Mercantile Association: Certain market data is the property of Chicago Mercantile Exchange Inc. and its licensors. All rights reserved. Dow Jones: The Dow Jones branded indices are proprietary to and are calculated, distributed and marketed by DJI Opco, a subsidiary of S&amp;P Dow Jones Indices LLC and have been licensed for use to S&amp;P Opco, LLC and CNN. Standard &amp; Poor's and S&amp;P are registered trademarks of Standard &amp; Poor's Financial Services LLC and Dow Jones is a registered trademark of Dow Jones Trademark Holdings LLC. All content of the Dow Jones branded indices Â© S&amp;P Dow Jones Indices LLC 2018
+				and/or its affiliates.
+			</p>
+			<p class="fe31535c" id="cnnmoney_footer_terms">
+				Â© 2020
+				Cable News Network. A WarnerMedia Company. All Rights Reserved.<a target="_blank" rel="noopener noreferrer" href="//www.cnn.com/terms/">Terms</a>
+				under which this service is provided to you.<a target="_blank" rel="noopener noreferrer" href="//www.cnn.com/privacy/"> Privacy Policy.</a>
+				<a href="javascript: window.OneTrust.ToggleInfoDisplay();" id="js-ccpa-do-not-sell" class="ccpa-doNotSell-link">Do Not Sell</a>
+				<a id="trusteLink"></a>
+
+			</p>
+		</footer>
+	</div>
+</div>
+
+<style>
+	/* Footer  */
+	#react_footer {
+		min-width: 1140px;
+	}
+
+	.responsive #react_footer {
+		min-width: unset;
+	}
+
+	#react_footer footer div:nth-child(2)::before, #react_footer footer div:nth-child(2)::after {
+		background: #eee;
+	}
+
+	.responsive #react_footer footer div:nth-child(2)::before, .responsive #react_footer footer div:nth-child(2)::after {
+		background: #979797;
+	}
+
+	#cnnFooter {
+		background: #fff;
+	}
+	#cnnFooter #react_footer a {
+		color: #313131;
+	}
+	#cnnFooter #react_footer a:hover {
+		text-decoration: none;
+	}
+
+	@media screen and (min-width: 641px) {
+		.responsive #react_footer footer div:nth-child(2)::before, .responsive #react_footer footer div:nth-child(2)::after {
+			background: #eee;
+		}
+	}
+
+
+
+
+	/* Footer CSS */
+	
+	._4c3b035b {
+	    background-color: #fff;
+	    color: #000;
+	    padding: 20px 0;
+	    letter-spacing: 1px;
+	    text-align: center;
+	}
+	
+	._05812abd {
+	    position: relative;
+	    height: 53px;
+	}
+	
+	._05812abd span {
+	    height: 53px;
+	}
+	
+	._05812abd:before,
+	._05812abd:after {
+	    content: '';
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    height: 1px;
+	    background: #979797;
+	    width: calc(50% - 95px);
+	}
+	
+	._05812abd:before {
+	    left: 0px;
+	}
+	
+	._05812abd:after {
+	    right: 0px;
+	}
+	
+	._05812abd > span img {
+	    height: 53px;
+	}
+	
+	._7dc7c77c {
+	    margin: 25px 0px 30px;
+	}
+	
+	._7dc7c77c a {
+	    margin: 0px 25px 15px;
+	    text-decoration: none;
+	    color: #313131 !important;
+	    display: block;
+	    font-weight: 200;
+	    font-size: 14px;
+	}
+	
+	._7dc7c77c a:hover {
+	    opacity: 0.5;
+	}
+	
+	._7f66fb27 a {
+	    margin: 0 12px;
+	}
+	
+	.fe31535c {
+	    margin: 25px auto;
+	    padding: 0px 20px;
+	    color: #9d9d9d;
+	    font-size: 11px;
+	    line-height: 1.82;
+	    font-weight: 200;
+	    max-width: 1000px;
+	}
+	
+	.fe31535c a {
+	    color: #313131;
+	    text-decoration: none;
+	}
+	
+	._4c3b035b #trusteLink a {
+	    position: relative;
+	    margin-right: 15px;
+	}
+	
+	._4c3b035b #trusteLink a:after {
+	    content: '';
+	    width: 12px;
+	    height: 12px;
+	    position: absolute;
+	    background: url(https://i2.cdn.turner.com/money/.element/img/1.0/services/advertise/adchoiceslogo_footer.png) no-repeat;
+	    display: inline-block;
+	    top: 2px;
+	    right: -15px;
+	}
+	
+	@media screen and (min-width: 641px) {
+	    ._05812abd:before,
+	    ._05812abd:after {
+	        content: '';
+	        position: absolute;
+	        top: 50%;
+	        transform: translateY(-50%);
+	        height: 1px;
+	        background: #eee;
+	        width: calc(50% - 95px);
+	    }
+	
+	    ._7dc7c77c a {
+	        display: inline-block;
+	    }
+	
+	    .fe31535c {
+	        font-size: 11px;
+	    }
+	}
+	._09a2dd12 {
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	    -ms-flex-align: center;
+	        align-items: center;
+	}
+	
+	.d108d922 {
+	    display: inline-block;
+	    line-height: 100%;
+	}
+	
+	.d108d922:hover {
+	    opacity: 0.5;
+	}
+	.f9786d8e {
+	    position: relative;
+	    top: 0px;
+	    display: inline-block;
+	}
+	
+	.f234abe9,
+	.f9786d8e {
+	    height: 40px;
+	}
+	
+	.a2419916 {
+	    display: inline-block;
+	    height: 100%;
+	}
+	html,
+	body {
+	    height: 100%;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	}
+	._55afeaf6 {
+	    font-family: 'CNNSans';
+	    position: relative;
+	    background-color: #eee;
+	}
+	._55afeaf6 *,
+	._55afeaf6 *:before,
+	._55afeaf6 *:after {
+	    box-sizing: border-box;
+	}
+	button {
+	    /* prevent gray button tap issue on safari */
+	    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    border: none;
+	    background: none;
+	}
+	._55afeaf6 .noSelect {
+	    -webkit-touch-callout: none; /* iOS Safari */
+	    -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+	    -moz-user-select: none; /* Firefox */
+	    -ms-user-select: none; /* Internet Explorer/Edge */
+	    user-select: none; /* Non-prefixed version, currently
+	                                  supported by Chrome and Opera */
+	}
+	._55afeaf6 .noTextFlicker {
+	    /* fix for text flickering */
+	    transform: translateZ(0);
+	}
+	@media screen and (min-width: 641px) {
+	    html,
+	    body {
+	        background: #fff;
+	    }
+	
+	    ._55afeaf6 {
+	        background-color: white;
+	    }
+	}
+	/* GLOBAL ANIMATION CLASSES */
+	@keyframes c916eecf {
+	    0% {
+	        opacity: 0;
+	    }
+	    100% {
+	        opacity: 1;
+	    }
+	}
+	.fadeIn {
+	    animation-name: c916eecf;
+	    animation-duration: 0.5s;
+	    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	    animation-fill-mode: forwards;
+	}
+	/* FONTS */
+	@font-face {
+	    font-family: 'CNNSans';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansDisplayW04-Thin.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansDisplayW04-Thin.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansDisplayW04-Thin.svg') format('svg');
+	    font-weight: 100;
+	}
+	@font-face {
+	    font-family: 'CNNSans';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansDisplayW04-Light.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansDisplayW04-Light.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansDisplayW04-Light.svg') format('svg');
+	    font-weight: 200;
+	}
+	@font-face {
+	    font-family: 'CNNSans';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Regular.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Regular.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Regular.svg') format('svg');
+	    font-weight: 300;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'CNNSans';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Medium.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Medium.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Medium.svg') format('svg');
+	    font-weight: 500;
+	}
+	@font-face {
+	    font-family: 'CNNSans';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Bold.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Bold.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Bold.svg') format('svg');
+	    font-weight: 700;
+	    font-style: bold;
+	}
+	@font-face {
+	    font-family: 'CNNSansCondensed';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.svg') format('svg');
+	}
+	@font-face {
+	    font-family: 'CNNCondensed';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedLight.eot');
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedLight.eot?#iefix') format('embedded-opentype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedLight.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedLight.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedLight.svg#regular') format('svg');
+	    font-weight: 100;
+	}
+	@font-face {
+	    font-family: 'CNNCondensed';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.eot');
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.eot?#iefix') format('embedded-opentype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-Condensed.svg#regular') format('svg');
+	    font-weight: 300;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'CNNCondensed';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedMedium.eot');
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedMedium.eot?#iefix') format('embedded-opentype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedMedium.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedMedium.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedMedium.svg#regular') format('svg');
+	    font-weight: 400;
+	}
+	@font-face {
+	    font-family: 'CNNCondensed';
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedBold.eot');
+	    src: url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedBold.eot?#iefix') format('embedded-opentype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedBold.woff') format('woff'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedBold.ttf') format('truetype'),
+	        url('https://i.cdn.turner.com/money/.e/font/9.0/CNNSansW04-CondensedBold.svg#regular') format('svg');
+	    font-weight: 500;
+	    font-style: bold;
+	}
+
+    #cnnmoney_footer #cnnmoney_footer_links a.gdpr-cookiesetting-link
+    {
+      display: none;
+    }
+    #cnnmoney_footer #cnnmoney_footer_links a.gdpr-cookiesetting-link.unhide
+    {
+      display: inline-block;
+    }
+
+	#cnnmoney_footer #cnnmoney_footer_terms a.ccpa-doNotSell-link
+    {
+      display: none;
+    }
+    #cnnmoney_footer #cnnmoney_footer_terms a.ccpa-doNotSell-link.show
+    {
+      display: inline-block;
+    }
+
+</style>
+
+<script>
+if(WM && WM.UserConsent && WM.UserConsent.isInGdprRegion()) {
+	let cookieLink = document.getElementById('js-gdpr-cookiesetting');
+	cookieLink.className += ' unhide';
+}
+if (WM && WM.UserConsent && WM.UserConsent.isInCcpaRegion()) {
+  let doNotSellLink = document.getElementById('js-ccpa-do-not-sell');
+  doNotSellLink.className += ' show';
+  doNotSellLink.text = window.WM.UserConsent.getLinkTitle() || doNotSellLink.text;
+}
+
+</script>
+
+
+
+<script>
+if (window.location.hostname === "ref2.money.cnn.com") {
+    var cnnOmniture_prodenv = false;
+}
+else if (window.location.hostname === "dev.money.cnn.com") {
+    var cnnOmniture_prodenv = false;
+}
+else if (window.location.hostname === "train.money.cnn.com") {
+    var cnnOmniture_prodenv = false;
+}
+else if (window.location.hostname === "stage.money.cnn.com") {
+    var cnnOmniture_prodenv = false;
+}
+else { 
+    var cnnOmniture_prodenv = true;
+}
+
+
+if (window.location.pathname.indexOf('.element') == -1 && window.location.href.indexOf('?fb_xd_fragment#?=&') == -1 && window.location.href.indexOf('search/index.html?') == -1){ 
+   var jsmd=_jsmd.init();
+   jsmd.send();
+}    
+</script>
+
+<script>
+	window.WM.UserConsent.addScript({ 
+			src: "//money.cnn.com/.element/script/6.0/newsbeat/newsbeat.ccpa.js" 
+		}, ['data-store', 'measure-content']);
+</script>
+<!-- STILL NEEDED?
+<script language="JavaScript">
+	var R = new String(document.referrer);
+	var serveAd=1;
+	if(R.length > 0)
+	{
+		if (R.indexOf("yahoo.com") >= 0)
+			serveAd=0;
+	}
+	if(serveAd)
+	{
+		/* dynamic logic */
+		document.write('<scr'+'ipt src="//content.dl-rms.com/rms/mother/8101/nodetag.js"></scr'+'ipt>');
+		/* ADSPACE: ros/popunders/bot.1x1 */
+		cnnad_createAd("229469","//ads.cnn.com/html.ng/site=cnn_money&cnn_money_position=1x1_bot&params.styles=fs","1","1");
+		try { selectSurvey(); }	catch(e){}
+	}
+</script>-->
+
+<!-- Begin: www.iperceptions.com - biz.trackingcode -->
+<script>
+	window.WM.UserConsent.addScript({ 
+			src: "//ips-invite.iperceptions.com/webValidator.aspx?sdfc=8903e7fe-104983-4d96497c-d068-4528-a4f9-0dbb51a45963&lID=1&loc=STUDY&cD=90&rF=False&iType=1&domainname=0" 
+		}, ['data-store', 'content-person', 'measure-content', 'product-develop']);
+</script>
+<!-- End: www.iperceptions.com -->
+
+<!-- Dynamically change Dianomi class name. -->
+<!-- We are not sure what is using this, commenting out for now -->
+<!-- <script type="text/javascript">
+    $( "#dianomi" ).next().attr( "class", "optanon-category-adv" );
+</script> -->
+
+
+
+<noscript>
+  <img src="//pixel.quantserve.com/pixel/p-D1yc5zQgjmqr5.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast Tag -->
+
+ <img src="//i.cdn.turner.com/money/video/bvp/images/1.gif" alt="" name="OmnitureTrack" id="OmnitureTrack" width="0" vspace="0" hspace="0" height="0" border="0" align="right"> 
+<img src="//i.cdn.turner.com/money/images/1.gif" alt="" name="cookieCrumb" id="cookieCrumb" width="0" vspace="0" hspace="0" height="0" border="0" align="right"> 
+
+<script type="text/javascript"> 
+	// needs to be defined before data/common.js
+	var urlPre="//markets.money.cnn.com/";
+	var cnnDomain="//money.cnn.com/";
+	var cookieDomain="cnn.com";
+	var tzOffset= -240;
+	//var tzOffset= -300;
+</script> 
+
+<script>
+    (function (win, doc) {
+        var s;
+        if (win.WM.UserConsent.isEnabled() === false) {
+            s = doc.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.onload = function (e) {
+               stLight.options({doNotHash:true});
+            };
+            s.src = '//ws.sharethis.com/button/buttons.js';
+            window.WM.UserConsent.addScriptElement(s, ['iab'], doc.getElementsByTagName('head')[0]);
+        }
+    })(window, document);
+</script>
+
+
+<script type="text/javascript" src="https://z.cdn.turner.com/money/tmpl_asset/static/script/2229/js/cnnmoney.interactive-min.js"></script>
+
+ <script type="text/javascript" class="optanon-category-adv">
+ var ezt = ezt ||[];
+
+ (function(){
+   var src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-D1yc5zQgjmqr5";
+   WM.UserConsent.addScript({async: true, src:src}, ["iab", "vendor"]);
+ }());
+
+
+ ezt.push({qacct: 'p-D1yc5zQgjmqr5',
+	   uid: 'USER-ID-HERE'
+           });
+</script></footer>  <div id="onetrust-consent-sdk"><div class="onetrust-pc-dark-filter ot-hide ot-fade-in"></div><div id="onetrust-pc-sdk" class="ot-sdk-container otPcCenter ot-hide ot-fade-in ot-accordions-pc ot-sdk-not-webkit ot-leg-opt-out ot-leg-btn" aria-modal="true" role="dialog" aria-labelledby="pc-title" lang="en"><!-- Close Button --> <button id="close-pc-btn-handler" class="main pc-close-button ot-close-icon" aria-label="Close"></button><!-- Close Button --><div id="ot-content" class="ot-main-content"><!-- Logo Tag --><div class="pc-logo-container"><div class="pc-logo" role="img" aria-label="Company Logo" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/static/ot_logo.png&quot;);
+                    background-position: left"></div></div><h3 id="pc-title">Manage Cookies+</h3><div id="pc-policy-text">We process your personal data to personalize content and ads, measure the delivery of such content and ads, to provide social media features, to extract insights about our properties and as otherwise specified in our <a href="https://www.cnn.com/privacy">Privacy Policy</a>. We share this information with our <a href="https://www.warnermediaprivacy.com/affiliates/">Affiliates</a> and <a class="onetrust-vendors-list-handler" role="button" href="javascript:void(0)" tabindex="0"><u>Vendors</u></a> on the basis of consent or legitimate interest. You may exercise your right to consent or, in some cases object to, a legitimate interest based on a specific purpose below. Additionally, you may exercise your preferences for consent or object to legitimate interest processing at a vendor level in the “Vendors” link under each purpose. These choices will be signaled to our vendors participating in the <a href="https://iabeurope.eu/transparency-consent-framework/">Transparency and Consent Framework</a>.
+                        <a href="https://www.cnn.com/privacy" class="privacy-notice-link" target="_blank" aria-label="Privacy Policy, Opens in a new window">Privacy Policy</a></div><div id="accept-recommended-container" class="ot-sdk-row"><div class="ot-sdk-column"><button id="accept-recommended-btn-handler" class="button-theme">Accept All</button></div></div><section id="cookie-preferences" class="ot-sdk-row category-group"><h3 id="manage-cookies-text">PLEASE NOTE: Consent to store and/or access information on a device is required to customize and improve your experience</h3><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_1"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_1-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_1" aria-labelledby="ot-header-id-IABV2_1"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_1">Store and/or access information on a device</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle"><input type="checkbox" name="ot-group-id-IABV2_1" class="switch-checkbox category-switch-handler" id="ot-group-id-IABV2_1" aria-checked="true" role="switch" data-optanongroupid="IABV2_1" checked="" aria-labelledby="ot-header-id-IABV2_1"> <label class="ot-switch-label" for="ot-group-id-IABV2_1"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Store and/or access information on a device</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_1">Cookies, device identifiers, or other information can be stored or accessed on your device for the purposes presented to you.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_1">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_4"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_4-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_4" aria-labelledby="ot-header-id-IABV2_4"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_4">Select personalised ads</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle"><input type="checkbox" name="ot-group-id-IABV2_4" class="switch-checkbox category-switch-handler" id="ot-group-id-IABV2_4" aria-checked="true" role="switch" data-optanongroupid="IABV2_4" checked="" aria-labelledby="ot-header-id-IABV2_4"> <label class="ot-switch-label" for="ot-group-id-IABV2_4"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Select personalised ads</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_4">Personalised ads can be shown to you based on a profile about you.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_4">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_3"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_3-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_3" aria-labelledby="ot-header-id-IABV2_3"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_3">Create a personalised ads profile</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle"><input type="checkbox" name="ot-group-id-IABV2_3" class="switch-checkbox category-switch-handler" id="ot-group-id-IABV2_3" aria-checked="true" role="switch" data-optanongroupid="IABV2_3" checked="" aria-labelledby="ot-header-id-IABV2_3"> <label class="ot-switch-label" for="ot-group-id-IABV2_3"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Create a personalised ads profile</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_3">A profile can be built about you and your interests to show you personalised ads that are relevant to you.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_3">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_6"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_6-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_6" aria-labelledby="ot-header-id-IABV2_6"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_6">Select personalised content</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_6"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Select personalised content</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_6">Personalised content can be shown to you based on a profile about you.</p><div class="ot-leg-btn-container" data-group-id="IABV2_6" data-el-id="IABV2_6-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_6">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_5"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_5-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_5" aria-labelledby="ot-header-id-IABV2_5"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_5">Create a personalised content profile</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_5"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Create a personalised content profile</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_5">A profile can be built about you and your interests to show you personalised content that is relevant to you.</p><div class="ot-leg-btn-container" data-group-id="IABV2_5" data-el-id="IABV2_5-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_5">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_8"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_8-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_8" aria-labelledby="ot-header-id-IABV2_8"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_8">Measure content performance</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_8"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Measure content performance</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_8">The performance and effectiveness of content that you see or interact with can be measured.</p><div class="ot-leg-btn-container" data-group-id="IABV2_8" data-el-id="IABV2_8-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_8">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_9"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_9-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_9" aria-labelledby="ot-header-id-IABV2_9"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_9">Apply market research to generate audience insights</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_9"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Apply market research to generate audience insights</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_9">Market research can be used to learn more about the audiences who visit sites/apps and view ads.</p><div class="ot-leg-btn-container" data-group-id="IABV2_9" data-el-id="IABV2_9-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_9">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_10"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_10-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_10" aria-labelledby="ot-header-id-IABV2_10"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_10">Develop and improve products</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_10"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Develop and improve products</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_10">Your data can be used to improve existing systems and software, and to develop new products</p><div class="ot-leg-btn-container" data-group-id="IABV2_10" data-el-id="IABV2_10-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_10">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_2"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_2-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_2" aria-labelledby="ot-header-id-IABV2_2"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_2">Select basic ads</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_2"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Select basic ads</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_2">Ads can be shown to you based on the content you’re viewing, the app you’re using, your approximate location, or your device type.</p><div class="ot-leg-btn-container" data-group-id="IABV2_2" data-el-id="IABV2_2-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_2">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IABV2_7"><input type="checkbox" name="storage-access" id="ot-group-id-IABV2_7-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IABV2_7" aria-labelledby="ot-header-id-IABV2_7"><!-- Accordion header --><div class="accordion-header"><h4 class="category-header" id="ot-header-id-IABV2_7">Measure ad performance</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="switch" class="switch-checkbox category-switch-handler" id="performance-switch" aria-checked="false" role="switch" aria-hidden="true"> <label class="ot-switch-label" for="ot-group-id-IABV2_7"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Measure ad performance</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IABV2_7">The performance and effectiveness of ads that you see or interact with can be measured.</p><div class="ot-leg-btn-container" data-group-id="IABV2_7" data-el-id="IABV2_7-leg-out" is-vendor="false">
+                    <button class="ot-obj-leg-btn-handler ot-leg-int-enabled ot-inactive-leg-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+                            <path fill="#262626" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                       <span>Object to Legitimate Interests
+                        </span>
+                    </button>
+                    <button class="ot-remove-objection-handler" style="color:#6abf4b; display:none;">Remove Objection</button>
+                </div>
+        <!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IABV2_7">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="ISPV2_1"><input type="checkbox" name="storage-access" id="ot-group-id-ISPV2_1-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-ISPV2_1" aria-labelledby="ot-header-id-ISPV2_1"><!-- Accordion header --><div class="accordion-header ot-always-active-group"><h4 class="category-header" id="ot-header-id-ISPV2_1">Ensure security, prevent fraud, and debug</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-always-active">Always Active</div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-ISPV2_1" class="switch-checkbox category-switch-handler" id="ot-group-id-ISPV2_1" aria-checked="false" role="switch" aria-hidden="true" data-optanongroupid="ISPV2_1" aria-labelledby="ot-header-id-ISPV2_1"> <label class="ot-switch-label" for="ot-group-id-ISPV2_1"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Ensure security, prevent fraud, and debug</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-ISPV2_1">Your data can be used to monitor for and prevent fraudulent activity, and ensure systems and processes work properly and securely.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="ISPV2_1">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="ISPV2_2"><input type="checkbox" name="storage-access" id="ot-group-id-ISPV2_2-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-ISPV2_2" aria-labelledby="ot-header-id-ISPV2_2"><!-- Accordion header --><div class="accordion-header ot-always-active-group"><h4 class="category-header" id="ot-header-id-ISPV2_2">Technically deliver ads or content</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-always-active">Always Active</div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-ISPV2_2" class="switch-checkbox category-switch-handler" id="ot-group-id-ISPV2_2" aria-checked="false" role="switch" aria-hidden="true" data-optanongroupid="ISPV2_2" aria-labelledby="ot-header-id-ISPV2_2"> <label class="ot-switch-label" for="ot-group-id-ISPV2_2"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Technically deliver ads or content</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-ISPV2_2">Your device can receive and send information that allows you to see and interact with ads and content.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="ISPV2_2">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IFEV2_1"><input type="checkbox" name="storage-access" id="ot-group-id-IFEV2_1-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IFEV2_1" aria-labelledby="ot-header-id-IFEV2_1"><!-- Accordion header --><div class="accordion-header ot-always-active-group"><h4 class="category-header" id="ot-header-id-IFEV2_1">Match and combine offline data sources</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-always-active">Always Active</div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-IFEV2_1" class="switch-checkbox category-switch-handler" id="ot-group-id-IFEV2_1" aria-checked="false" role="switch" aria-hidden="true" data-optanongroupid="IFEV2_1" aria-labelledby="ot-header-id-IFEV2_1"> <label class="ot-switch-label" for="ot-group-id-IFEV2_1"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Match and combine offline data sources</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IFEV2_1">Data from offline data sources can be combined with your online activity in support of one or more purposes</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IFEV2_1">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IFEV2_2"><input type="checkbox" name="storage-access" id="ot-group-id-IFEV2_2-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IFEV2_2" aria-labelledby="ot-header-id-IFEV2_2"><!-- Accordion header --><div class="accordion-header ot-always-active-group"><h4 class="category-header" id="ot-header-id-IFEV2_2">Link different devices</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-always-active">Always Active</div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-IFEV2_2" class="switch-checkbox category-switch-handler" id="ot-group-id-IFEV2_2" aria-checked="false" role="switch" aria-hidden="true" data-optanongroupid="IFEV2_2" aria-labelledby="ot-header-id-IFEV2_2"> <label class="ot-switch-label" for="ot-group-id-IFEV2_2"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Link different devices</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IFEV2_2">Different devices can be determined as belonging to you or your household in support of one or more of purposes.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IFEV2_2">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="IFEV2_3"><input type="checkbox" name="storage-access" id="ot-group-id-IFEV2_3-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-IFEV2_3" aria-labelledby="ot-header-id-IFEV2_3"><!-- Accordion header --><div class="accordion-header ot-always-active-group"><h4 class="category-header" id="ot-header-id-IFEV2_3">Receive and use automatically-sent device characteristics for identification</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-always-active">Always Active</div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-IFEV2_3" class="switch-checkbox category-switch-handler" id="ot-group-id-IFEV2_3" aria-checked="false" role="switch" aria-hidden="true" data-optanongroupid="IFEV2_3" aria-labelledby="ot-header-id-IFEV2_3"> <label class="ot-switch-label" for="ot-group-id-IFEV2_3"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Receive and use automatically-sent device characteristics for identification</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-IFEV2_3">Your device might be distinguished from other devices based on information it automatically sends, such as IP address or browser type.</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --><div class="category-vendors-list-container"><button class="ot-link-btn category-vendors-list-btn category-vendors-list-handler" data-parent-id="IFEV2_3">Vendors‎</button><a href="https://tcf.cookiepedia.co.uk?lang=en" target="_blank">&nbsp;|&nbsp;View Full Legal Text&nbsp;<span class="ot-scrn-rdr">Opens in a new window</span></a></div></div></div><div class="ot-accordion-layout category-item" data-optanongroupid="req"><input type="checkbox" name="storage-access" id="ot-group-id-req-toggle" aria-expanded="false" ot-accordion="true" role="button" aria-controls="ot-desc-id-req" aria-labelledby="ot-header-id-req"><!-- Accordion header --><div class="accordion-header ot-always-active-group"><h4 class="category-header" id="ot-header-id-req">Strictly Necessary Cookies</h4><!-- Group toggle --><div class="ot-arrow-container"><svg class="ot-arrow" width="15px" height="15px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div><div class="ot-always-active">Always Active</div><div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-req" class="switch-checkbox category-switch-handler" id="ot-group-id-req" aria-checked="true" role="switch" aria-hidden="true" data-optanongroupid="req" checked="" aria-labelledby="ot-header-id-req"> <label class="ot-switch-label" for="ot-group-id-req"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Strictly Necessary Cookies</span></label></div></div><!-- accordion detail --><div class="ot-accordion-pc-container accordion-text"><p class="ot-accordion-group-pc-container ot-category-desc" id="ot-desc-id-req">These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you, which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. 
+<br><br>
+You can set your browser to block or alert you about these cookies, but some parts of the site will not work. 
+</p><!-- COOKIE SUBGROUPS*** --><!-- COOKIE SUBGROUPS END*** --></div></div><!-- Groups sections starts --><!-- Group section ends --><!-- Accordion Group section starts --><!-- Accordion Group section ends --><!-- Footer section starts --><div class="save-preference-btn-container"> <button class="save-preference-btn-handler onetrust-close-btn-handler button-theme">Save Preferences</button><div class="ot-pc-footer-logo"><a class="powered-by-logo" href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg&quot;)" aria-label="Powered by OneTrust Opens in a new window"></a></div></div><!-- Footer section ends --></section></div><section id="vendors-list" class="ot-hide hosts-list"><div id="vendors-list-header"><button class="ot-link-btn back-btn-handler" aria-label="Back"><svg id="ot-back-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 444.531 444.531" xml:space="preserve"><title>Back Button</title><g><path fill="#656565" d="M213.13,222.409L351.88,83.653c7.05-7.043,10.567-15.657,10.567-25.841c0-10.183-3.518-18.793-10.567-25.835
+                      l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425
+                      c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564
+                      s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978
+                      L213.13,222.409z"></path></g></svg><p class="pc-back-button-text">Back</p></button><!-- Close Button --> <button id="vendor-close-pc-btn-handler" class="vendors-list pc-close-button ot-close-icon" aria-label="Close"></button><!-- Close Button --><h3 id="vendors-list-title">Performance Cookies</h3><div id="search-container"><label for="vendor-search-handler" class="screen-reader-only">Vendor Search</label> <input id="vendor-search-handler" type="text" placeholder="Search..." name="vendor-search-handler"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="30" viewBox="0 -30 110 110"><title>Search Icon</title><path fill="#2e3644" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                  s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg> <button class="ot-link-btn" id="filter-btn-handler" aria-label="Filter Icon" aria-haspopup="true"><svg role="presentation" aria-hidden="true" id="filter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 402.577 402.577" style="enable-background:new 0 0 402.577 402.577;" xml:space="preserve"><title>Filter Icon</title><g><path id="filter-icon-path" fill="#656565" d="M400.858,11.427c-3.241-7.421-8.85-11.132-16.854-11.136H18.564c-7.993,0-13.61,3.715-16.846,11.136
+                c-3.234,7.801-1.903,14.467,3.999,19.985l140.757,140.753v138.755c0,4.955,1.809,9.232,5.424,12.854l73.085,73.083
+                c3.429,3.614,7.71,5.428,12.851,5.428c2.282,0,4.66-0.479,7.135-1.43c7.426-3.238,11.14-8.851,11.14-16.845V172.166L396.861,31.413
+                C402.765,25.895,404.093,19.231,400.858,11.427z"></path></g></svg></button><div id="ot-triangle"></div><section id="ot-filter-modal"><div id="ot-options"><div id="clear-filters-container"><button class="ot-link-btn" id="clear-filters-handler"><p>Clear Filters</p></button></div><div class="ot-group-options"><div class="ot-group-option"><div class="ot-checkbox"><input id="storage-access-group" class="ot-group-option-box category-filter-handler" type="checkbox"> <label for="storage-access-group"><span>Information storage and access</span></label></div></div></div><button id="filter-apply-handler" class="ot-pill">Apply</button></div></section></div><div id="select-all-container"><div class="ot-checkbox"><div class="leg-int-sel-all-hdr"><span class="consent-hdr">Consent</span> <span class="leg-int-hdr">Leg.Interest</span></div><div id="select-all-text-container"><p>All Consent Allowed</p></div><!-- select all vendor leg.int toggle container --><div id="select-all-vendors-leg-input-container"><input id="select-all-vendor-leg-handler" class="ot-group-option-box" type="checkbox"> <label for="select-all-vendor-leg-handler"><span class="label-text">Select All Vendors</span></label></div><!-- select all vendor consent toggle container --><div id="select-all-vendors-input-container"><input id="select-all-vendor-groups-handler" class="ot-group-option-box" type="checkbox"> <label for="select-all-vendor-groups-handler"><span class="label-text">Select All Vendors</span></label></div><!-- Hosts select all input container --><div id="select-all-hosts-input-container"><input id="select-all-hosts-groups-handler" class="ot-group-option-box" type="checkbox"> <label for="select-all-hosts-groups-handler"><span class="label-text">All Consent Allowed</span></label></div></div></div></div><section id="vendor-list-content" class="host-list-content"><div id="vendors-list-text" class="ot-sdk-row"><div class="ot-sdk-column"><ul id="vendors-list-container"></ul></div></div></section><div id="vendor-list-save-btn" class="save-preference-btn-container"> <button class="save-preference-btn-handler onetrust-close-btn-handler button-theme">Save Preferences</button><div class="ot-pc-footer-logo"><a class="powered-by-logo" href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg&quot;)" aria-label="Powered by OneTrust Opens in a new window"></a></div></div></section><iframe class="ot-text-resize" title="onetrust-text-resize" style="position:absolute;top:-50000px;width:100em;" aria-hidden="true"></iframe></div><div id="ot-sdk-btn-floating" title="Manage Cookies+" class="ot-floating-button"><div class="ot-floating-button__front"><button type="button" class="ot-floating-button__open"><svg role="presentation" xmlns="http://www.w3.org/2000/svg"><path class="ot-floating-button__svg-fill" d="M14.588 0l.445.328c1.807 1.303 3.961 2.533 6.461 3.688 2.015.93 4.576 1.746 7.682 2.446 0 14.178-4.73 24.133-14.19 29.864l-.398.236C4.863 30.87 0 20.837 0 6.462c3.107-.7 5.668-1.516 7.682-2.446 2.709-1.251 5.01-2.59 6.906-4.016zm5.87 13.88a.75.75 0 00-.974.159l-5.475 6.625-3.005-2.997-.077-.067a.75.75 0 00-.983 1.13l4.172 4.16 6.525-7.895.06-.083a.75.75 0 00-.16-.973z" fill="#FFF" fill-rule="evenodd"></path></svg></button></div><div class="ot-floating-button__back"><button type="button" class="ot-floating-button__close"><!--?xml version="1.0" encoding="UTF-8"?--> <svg role="presentation" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Banner_02" class="ot-floating-button__svg-fill" transform="translate(-318.000000, -725.000000)" fill="#ffffff" fill-rule="nonzero"><g id="Group-2" transform="translate(305.000000, 712.000000)"><g id="icon/16px/white/close"><polygon id="Line" points="13.3333333 14.9176256 35.0823744 36.6666667 36.6666667 35.0823744 14.9176256 13.3333333"></polygon><polygon id="Line" transform="translate(25.000000, 25.000000) scale(-1, 1) translate(-25.000000, -25.000000) " points="13.3333333 14.9176256 35.0823744 36.6666667 36.6666667 35.0823744 14.9176256 13.3333333"></polygon></g></g></g></g></svg></button></div></div></div><div id="csimanagerdiv"></div><div id="csimanagerdivdelayed"></div><div class="kxhead" data-id="IWzCuclz" style="display:none !important;"></div></body></html>
+                <head><script type="text/javascript" src="https://consumer.krxd.net/consent/get/e9eaedd3-c1da-4334-82f0-d7e3ff883c87?idt=device&amp;dt=kxcookie&amp;_kuid=kppidff_OG3HVjXT&amp;callback=Krux.ns._default.kxjsonp_consent_get_0"></script><script type="text/javascript" src="https://beacon.krxd.net/optout_check?_kuid=kppidff_OG3HVjXT&amp;callback=Krux.ns._default.kxjsonp_optOutCheck"></script><script async="" src="//cdn.krxd.net/ctjs/controltag.js.0631b7d64dbbd3656a8b7368ad227a04"></script><script src="https://rules.quantcount.com/rules-p-D1yc5zQgjmqr5.js" async=""></script><script async="" src="//cdn.adsafeprotected.com/iasPET.1.js"></script><script type="text/javascript" async="" src="//www.ugdturner.com/xd.sjs"></script><script type="text/javascript" async="" src="https://cdn.cnn.com/ads/adfuel/modules/keypress.js"></script><script async="" src="//c.amazon-adsystem.com/aax2/apstag.js"></script><script id="GPTScript" type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script async="" src="https://cdn.ml314.com/taglw.js"></script><script type="text/javascript" defer="" async="" src="//zion.cnn.com/2.0/zion-suite.min.js"></script><script type="text/javascript" async="" src="//cdn3.optimizely.com/js/geo2.js"></script> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <title>Millennial generation is bigger, more diverse than boomers - CNNMoney</title> <link rel="canonical" href="https://money.cnn.com/interactive/economy/diversity-millennials-boomers/index.html"> <link rel="image_src" href="http://i2.cdn.turner.com/money/dam/assets/140730155133-millennials-diversity-interactive-640x360.jpg"> <meta name="description" content="There are 76 million baby boomers, and 72% of them are white. The millennials are an even larger group with 87 million, but much more diverse — only 56% are white. See how diverse your generation is."> <meta name="keywords" content="Age, race, diversity, interactive d3, Millennial generation is bigger, more diverse than boomers"> <meta property="og:title" content="Millennial generation is bigger, more diverse than boomers - CNNMoney"> <meta property="og:url" content="https://money.cnn.com/interactive/economy/diversity-millennials-boomers/index.html"> <meta property="og:description" content="There are 76 million baby boomers, and 72% of them are white. The millennials are an even larger group with 87 million, but much more diverse — only 56% are white. See how diverse your generation is."> <meta property="og:type" content="article"> <meta property="og:site_name" content="CNNMoney"> <meta property="og:image" content="http://i2.cdn.turner.com/money/dam/assets/140730155133-millennials-diversity-interactive-640x360.jpg"> <meta name="twitter:title" content="Millennial generation is bigger, more diverse than boomers - CNNMoney"> <meta name="twitter:description" content="There are 76 million baby boomers, and 72% of them are white. The millennials are an even larger group with 87 million, but much more diverse — only 56% are white. See how diverse your generation is."> <meta name="twitter:url" content="https://money.cnn.com/interactive/economy/diversity-millennials-boomers/index.html"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@CNNMoney"> <meta name="twitter:image" content="http://i2.cdn.turner.com/money/dam/assets/140730155133-millennials-diversity-interactive-640x360.jpg"> <meta property="fb:admins" content="100000014300691"> <meta property="fb:app_id" content="521848191196480"> 
+
+<script type="text/javascript" src="//cdn.cnn.com/ads/adfuel/ais/2.1/cnn_money-ais.min.js"></script>
+<script type="text/javascript" src="//cdn.cnn.com/ads/adfuel/adfuel-2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.cnn.com/analytics/mon/jsmd-prod.min.js"></script>
+
+
+<script>
+var CNNBUSINESS = window.CNNBUSINESS || {};
+CNNBUSINESS.adTargets = {};
+
+if(document.referrer.match("edition|us|www.cnn.com"))
+{
+	CNNBUSINESS.adTargets.refdom = "cnn";
+}
+else if(document.referrer.match("money.cnn.com"))
+{
+	CNNBUSINESS.adTargets.refdom = "money";
+}
+else if(document.referrer.match("facebook.com"))
+{
+	CNNBUSINESS.adTargets.refdom = "facebook";
+}
+else if(document.referrer.match("twitter.com") || document.referrer.match("/t.co/"))
+{
+	CNNBUSINESS.adTargets.refdom = "twitter";
+}
+else if(document.referrer.match("google.com"))
+{
+	CNNBUSINESS.adTargets.refdom = "google";
+}
+else
+{
+	CNNBUSINESS.adTargets.refdom = "other";
+}
+</script>
+ <script type="text/javascript"> </script> <link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="https://z.cdn.turner.com/money/tmpl_asset/static/style/2713/css/cnnmoney.interactive-min.css"> 
+	<script type="text/javascript" src="https://z.cdn.turner.com/money/tmpl_asset/static/script/2229/js/cnnmoney.main-min.js"></script>
+
+<script type="text/javascript" src="//z.cdn.turner.com/money/.e/script/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="//z.cdn.turner.com/money/.e/script/jquery.migrate/jquery.migrate.min.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src = "//z.cdn.turner.com/money/.element/script/html5shiv/3.7.0/html5shiv.js"> </script>
+<![endif]-->
+
+
+<!--// Pre-fetch calls //-->
+<link rel="dns-prefetch" href="//fastlane.rubiconproject.com">
+<link rel="dns-prefetch" href="//optimized-by.rubiconproject.com">
+<link rel="dns-prefetch" href="//ads.rubiconproject.com">
+<link rel="dns-prefetch" href="//aax.amazon-adsystem.com">
+<link rel="dns-prefetch" href="//c.amazon-adsystem.com">
+<link rel="dns-prefetch" href="//rtax.criteo.com">
+<link rel="dns-prefetch" href="//static.criteo.net">
+<link rel="dns-prefetch" href="//bidder.criteo.com">
+
+<link rel="dns-prefetch" href="//indexww.com">
+<link rel="dns-prefetch" href="//js-sec.indexww.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//partner.googleadservices.com">
+<link rel="dns-prefetch" href="//i.cdn.turner.cnn.com">
+<link rel="dns-prefetch" href="//as.casalemedia.com">
+<link rel="dns-prefetch" href="//as-sec.casalemedia.com">
+<link rel="dns-prefetch" href="//dsum-sec.casalemedia.com">
+<link rel="dns-prefetch" href="//cdn.adsafeprotected.com">
+
+<style>
+.cmmtcount {display: none;}
+</style>
+
+
+<!-- OneTrust Cookies Consent with Polyfill -->
+<script src="/.element/ssi/head/5.1/custom-event.js" type="text/javascript"></script>
+
+<script>
+    window.WM = window.WM || {};
+    window.WM.UserConsentConfig = {
+        cookieDomain: '.cnn.com',
+        confirmCookie: "OptanonAlertBoxClosed",
+        consentCookie: "OptanonConsent",
+
+        domId: '3d9a6f21-8e47-43f8-8d58-d86150f3e92b', /* prod */
+        psmAppId: '5e9f25a81c9d440000a83808',
+
+        psmEnv: 'prod',
+        src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js'
+    };
+</script>
+
+
+<script src="/.element/ssi/head/5.1/user-consent-3.0.1.js" type="text/javascript"></script><script async="" charset="utf-8" data-document-language="true" data-domain-script="3d9a6f21-8e47-43f8-8d58-d86150f3e92b" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+
+
+
+<!--// Optimizely script include //-->
+ <script>
+    if (window.WM.UserConsent.inUserConsentState(['data-store', 'content-person-prof', 'content-person', 'measure-ads', 'measure-content', 'vendor'], {id: "optimizely"}) === false) {
+        window.optimizely = window.optimizely || [];
+        window.optimizely.push({ 'type': 'disable' });
+        console.log('Optimizely disabled.');
+    }
+</script>
+
+<script type"text="" javascript"="" src="//cdn.optimizely.com/js/131788053.js"></script>
+
+<!-- $HTTP_HOST -->
+
+<!-- Start BounceX tag. Deploy at the beginning of document head. -->
+ <script>
+    window.WM.UserConsent.addScript({ async: true, src:"//tag.bounceexchange.com/340/i.js" }, ['iab', 'vendor', 'data-store', 'content-person-prof', 'content-person']);
+</script><script async="" src="//tag.bounceexchange.com/340/i.js"></script>
+<!-- End BounceX Tag-->
+
+
+<!-- Zion -->
+<script>
+if(window.WM.UserConsent.inUserConsentState(["data-store", "ads-person-prof", "ads-person", "content-person-prof", "content-person", "measure-content"]))
+{
+    window.WM.UserConsent.addScript({ async: true, src:"//cdnjs.cloudflare.com/ajax/libs/core-js/2.6.9/core.min.js" }, ["data-store", "ads-person-prof", "ads-person", "content-person-prof", "content-person", "measure-content"]);
+    (function() {
+        const zion_config_url = '//zion.cnn.com/2.0/';
+        let d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.defer = true;
+        g.async = true;
+        g.src = zion_config_url + 'zion-suite.min.js';
+        s.parentNode.insertBefore(g, s);
+    })();    
+}
+</script><script async="" src="//cdnjs.cloudflare.com/ajax/libs/core-js/2.6.9/core.min.js"></script>
+ 
+<script language="JavaScript" type="text/javascript">var cnnSiteWideCurrDate = new Date(2014, 11, 4);</script>
+ <script src="https://sb.scorecardresearch.com/beacon.js"></script><script src="//money.cnn.com/.element/script/6.0/newsbeat/newsbeat.ccpa.js"></script><script src="//ips-invite.iperceptions.com/webValidator.aspx?sdfc=8903e7fe-104983-4d96497c-d068-4528-a4f9-0dbb51a45963&amp;lID=1&amp;loc=STUDY&amp;cD=90&amp;rF=False&amp;iType=1&amp;domainname=0"></script><script src="https://cdn.cookielaw.org/scripttemplates/6.12.0/otBannerSdk.js" async="" type="text/javascript"></script><script async="" src="//static.chartbeat.com/js/chartbeat_video.js"></script><script type="text/javascript" async="" src="https://cdn.cookielaw.org/scripttemplates/6.12.0/otTCF.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><style id="onetrust-style">#onetrust-banner-sdk{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}#onetrust-banner-sdk .onetrust-vendors-list-handler{cursor:pointer;color:#1f96db;font-size:inherit;font-weight:bold;text-decoration:none;margin-left:5px}#onetrust-banner-sdk .onetrust-vendors-list-handler:hover{color:#1f96db}#onetrust-banner-sdk .ot-close-icon,#onetrust-pc-sdk .ot-close-icon,#ot-sync-ntfy .ot-close-icon{background-image:url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzQ4LjMzM3B4IiBoZWlnaHQ9IjM0OC4zMzNweCIgdmlld0JveD0iMCAwIDM0OC4zMzMgMzQ4LjMzNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzQ4LjMzMyAzNDguMzM0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZmlsbD0iIzU2NTY1NiIgZD0iTTMzNi41NTksNjguNjExTDIzMS4wMTYsMTc0LjE2NWwxMDUuNTQzLDEwNS41NDljMTUuNjk5LDE1LjcwNSwxNS42OTksNDEuMTQ1LDAsNTYuODVjLTcuODQ0LDcuODQ0LTE4LjEyOCwxMS43NjktMjguNDA3LDExLjc2OWMtMTAuMjk2LDAtMjAuNTgxLTMuOTE5LTI4LjQxOS0xMS43NjlMMTc0LjE2NywyMzEuMDAzTDY4LjYwOSwzMzYuNTYzYy03Ljg0Myw3Ljg0NC0xOC4xMjgsMTEuNzY5LTI4LjQxNiwxMS43NjljLTEwLjI4NSwwLTIwLjU2My0zLjkxOS0yOC40MTMtMTEuNzY5Yy0xNS42OTktMTUuNjk4LTE1LjY5OS00MS4xMzksMC01Ni44NWwxMDUuNTQtMTA1LjU0OUwxMS43NzQsNjguNjExYy0xNS42OTktMTUuNjk5LTE1LjY5OS00MS4xNDUsMC01Ni44NDRjMTUuNjk2LTE1LjY4Nyw0MS4xMjctMTUuNjg3LDU2LjgyOSwwbDEwNS41NjMsMTA1LjU1NEwyNzkuNzIxLDExLjc2N2MxNS43MDUtMTUuNjg3LDQxLjEzOS0xNS42ODcsNTYuODMyLDBDMzUyLjI1OCwyNy40NjYsMzUyLjI1OCw1Mi45MTIsMzM2LjU1OSw2OC42MTF6Ii8+PC9nPjwvc3ZnPg==");background-size:contain;background-repeat:no-repeat;background-position:center;height:12px;width:12px}#onetrust-banner-sdk .powered-by-logo,#onetrust-banner-sdk .ot-pc-footer-logo a,#onetrust-pc-sdk .powered-by-logo,#onetrust-pc-sdk .ot-pc-footer-logo a,#ot-sync-ntfy .powered-by-logo,#ot-sync-ntfy .ot-pc-footer-logo a{background-size:contain;background-repeat:no-repeat;background-position:center;height:25px;width:152px;display:block}#onetrust-banner-sdk h3 *,#onetrust-banner-sdk h4 *,#onetrust-banner-sdk h6 *,#onetrust-banner-sdk button *,#onetrust-banner-sdk a[data-parent-id] *,#onetrust-pc-sdk h3 *,#onetrust-pc-sdk h4 *,#onetrust-pc-sdk h6 *,#onetrust-pc-sdk button *,#onetrust-pc-sdk a[data-parent-id] *,#ot-sync-ntfy h3 *,#ot-sync-ntfy h4 *,#ot-sync-ntfy h6 *,#ot-sync-ntfy button *,#ot-sync-ntfy a[data-parent-id] *{font-size:inherit;font-weight:inherit;color:inherit}#onetrust-banner-sdk .ot-hide,#onetrust-pc-sdk .ot-hide,#ot-sync-ntfy .ot-hide{display:none !important}#onetrust-pc-sdk .ot-sdk-row .ot-sdk-column{padding:0}#onetrust-pc-sdk .ot-sdk-container{padding-right:0}#onetrust-pc-sdk .ot-sdk-row{flex-direction:initial;width:100%}#onetrust-pc-sdk [type="checkbox"]:checked,#onetrust-pc-sdk [type="checkbox"]:not(:checked){pointer-events:initial}#onetrust-pc-sdk [type="checkbox"]:disabled+label::before,#onetrust-pc-sdk [type="checkbox"]:disabled+label:after,#onetrust-pc-sdk [type="checkbox"]:disabled+label{pointer-events:none;opacity:0.7}#onetrust-pc-sdk #vendor-list-content{transform:translate3d(0, 0, 0)}#onetrust-pc-sdk li input[type="checkbox"]{z-index:1}#onetrust-pc-sdk li .ot-checkbox label{z-index:2}#onetrust-pc-sdk li .ot-checkbox input[type="checkbox"]{height:auto;width:auto}#onetrust-pc-sdk li .host-title a,#onetrust-pc-sdk li .ot-host-name a,#onetrust-pc-sdk li .accordion-text,#onetrust-pc-sdk li .ot-acc-txt{z-index:2;position:relative}#onetrust-pc-sdk input{margin:3px 0.1ex}#onetrust-pc-sdk .toggle-always-active{opacity:0.6;cursor:default}#onetrust-pc-sdk .pc-logo,#onetrust-pc-sdk .ot-pc-logo{height:60px;width:180px;background-position:center;background-size:contain;background-repeat:no-repeat}#onetrust-pc-sdk .ot-tooltip .ot-tooltiptext{visibility:hidden;width:120px;background-color:#555;color:#fff;text-align:center;padding:5px 0;border-radius:6px;position:absolute;z-index:1;bottom:125%;left:50%;margin-left:-60px;opacity:0;transition:opacity 0.3s}#onetrust-pc-sdk .ot-tooltip .ot-tooltiptext::after{content:"";position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:#555 transparent transparent transparent}#onetrust-pc-sdk .ot-tooltip:hover .ot-tooltiptext{visibility:visible;opacity:1}#onetrust-pc-sdk .ot-tooltip{position:relative;display:inline-block;z-index:3}#onetrust-pc-sdk .ot-tooltip svg{color:grey;height:20px;width:20px}#onetrust-pc-sdk .screen-reader-only,#onetrust-pc-sdk .ot-scrn-rdr,.ot-sdk-cookie-policy .screen-reader-only,.ot-sdk-cookie-policy .ot-scrn-rdr{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}#onetrust-pc-sdk.ot-fade-in,.onetrust-pc-dark-filter.ot-fade-in{animation-name:onetrust-fade-in;animation-duration:400ms;animation-timing-function:ease-in-out}#onetrust-pc-sdk.ot-hide{display:none !important}.onetrust-pc-dark-filter.ot-hide{display:none !important}#ot-sdk-btn.ot-sdk-show-settings,#ot-sdk-btn.optanon-show-settings{color:#68b631;border:1px solid #68b631;height:auto;white-space:normal;word-wrap:break-word;padding:0.8em 2em;font-size:0.8em;line-height:1.2;cursor:pointer;-moz-transition:0.1s ease;-o-transition:0.1s ease;-webkit-transition:1s ease;transition:0.1s ease}#ot-sdk-btn.ot-sdk-show-settings:hover,#ot-sdk-btn.optanon-show-settings:hover{color:#fff;background-color:#68b631}.onetrust-pc-dark-filter{background:rgba(0,0,0,0.5);z-index:2147483646;width:100%;height:100%;overflow:hidden;position:fixed;top:0;bottom:0;left:0}@keyframes onetrust-fade-in{0%{opacity:0}100%{opacity:1}}@media only screen and (min-width: 426px) and (max-width: 896px) and (orientation: landscape){#onetrust-pc-sdk p{font-size:0.75em}}#onetrust-banner-sdk .banner-option-input:focus+label{outline:1px solid #000;outline-style:auto}
+#onetrust-banner-sdk,#onetrust-pc-sdk,#ot-sdk-cookie-policy,#ot-sync-ntfy{font-size:16px}#onetrust-banner-sdk *,#onetrust-banner-sdk ::after,#onetrust-banner-sdk ::before,#onetrust-pc-sdk *,#onetrust-pc-sdk ::after,#onetrust-pc-sdk ::before,#ot-sdk-cookie-policy *,#ot-sdk-cookie-policy ::after,#ot-sdk-cookie-policy ::before,#ot-sync-ntfy *,#ot-sync-ntfy ::after,#ot-sync-ntfy ::before{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}#onetrust-banner-sdk div,#onetrust-banner-sdk span,#onetrust-banner-sdk h1,#onetrust-banner-sdk h2,#onetrust-banner-sdk h3,#onetrust-banner-sdk h4,#onetrust-banner-sdk h5,#onetrust-banner-sdk h6,#onetrust-banner-sdk p,#onetrust-banner-sdk img,#onetrust-banner-sdk svg,#onetrust-banner-sdk button,#onetrust-banner-sdk section,#onetrust-banner-sdk a,#onetrust-banner-sdk label,#onetrust-banner-sdk input,#onetrust-banner-sdk ul,#onetrust-banner-sdk li,#onetrust-banner-sdk nav,#onetrust-banner-sdk table,#onetrust-banner-sdk thead,#onetrust-banner-sdk tr,#onetrust-banner-sdk td,#onetrust-banner-sdk tbody,#onetrust-banner-sdk .ot-main-content,#onetrust-banner-sdk .ot-toggle,#onetrust-banner-sdk #ot-content,#onetrust-banner-sdk #ot-pc-content,#onetrust-banner-sdk .checkbox,#onetrust-pc-sdk div,#onetrust-pc-sdk span,#onetrust-pc-sdk h1,#onetrust-pc-sdk h2,#onetrust-pc-sdk h3,#onetrust-pc-sdk h4,#onetrust-pc-sdk h5,#onetrust-pc-sdk h6,#onetrust-pc-sdk p,#onetrust-pc-sdk img,#onetrust-pc-sdk svg,#onetrust-pc-sdk button,#onetrust-pc-sdk section,#onetrust-pc-sdk a,#onetrust-pc-sdk label,#onetrust-pc-sdk input,#onetrust-pc-sdk ul,#onetrust-pc-sdk li,#onetrust-pc-sdk nav,#onetrust-pc-sdk table,#onetrust-pc-sdk thead,#onetrust-pc-sdk tr,#onetrust-pc-sdk td,#onetrust-pc-sdk tbody,#onetrust-pc-sdk .ot-main-content,#onetrust-pc-sdk .ot-toggle,#onetrust-pc-sdk #ot-content,#onetrust-pc-sdk #ot-pc-content,#onetrust-pc-sdk .checkbox,#ot-sdk-cookie-policy div,#ot-sdk-cookie-policy span,#ot-sdk-cookie-policy h1,#ot-sdk-cookie-policy h2,#ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy h5,#ot-sdk-cookie-policy h6,#ot-sdk-cookie-policy p,#ot-sdk-cookie-policy img,#ot-sdk-cookie-policy svg,#ot-sdk-cookie-policy button,#ot-sdk-cookie-policy section,#ot-sdk-cookie-policy a,#ot-sdk-cookie-policy label,#ot-sdk-cookie-policy input,#ot-sdk-cookie-policy ul,#ot-sdk-cookie-policy li,#ot-sdk-cookie-policy nav,#ot-sdk-cookie-policy table,#ot-sdk-cookie-policy thead,#ot-sdk-cookie-policy tr,#ot-sdk-cookie-policy td,#ot-sdk-cookie-policy tbody,#ot-sdk-cookie-policy .ot-main-content,#ot-sdk-cookie-policy .ot-toggle,#ot-sdk-cookie-policy #ot-content,#ot-sdk-cookie-policy #ot-pc-content,#ot-sdk-cookie-policy .checkbox,#ot-sync-ntfy div,#ot-sync-ntfy span,#ot-sync-ntfy h1,#ot-sync-ntfy h2,#ot-sync-ntfy h3,#ot-sync-ntfy h4,#ot-sync-ntfy h5,#ot-sync-ntfy h6,#ot-sync-ntfy p,#ot-sync-ntfy img,#ot-sync-ntfy svg,#ot-sync-ntfy button,#ot-sync-ntfy section,#ot-sync-ntfy a,#ot-sync-ntfy label,#ot-sync-ntfy input,#ot-sync-ntfy ul,#ot-sync-ntfy li,#ot-sync-ntfy nav,#ot-sync-ntfy table,#ot-sync-ntfy thead,#ot-sync-ntfy tr,#ot-sync-ntfy td,#ot-sync-ntfy tbody,#ot-sync-ntfy .ot-main-content,#ot-sync-ntfy .ot-toggle,#ot-sync-ntfy #ot-content,#ot-sync-ntfy #ot-pc-content,#ot-sync-ntfy .checkbox{font-family:inherit;font-weight:normal;-webkit-font-smoothing:auto;letter-spacing:normal;line-height:normal;padding:0;margin:0;height:auto;min-height:0;max-height:none;width:auto;min-width:0;max-width:none;border-radius:0;border:none;clear:none;float:none;position:static;bottom:auto;left:auto;right:auto;top:auto;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;white-space:normal;background:none;overflow:visible;vertical-align:baseline;visibility:visible;z-index:auto;box-shadow:none}#onetrust-banner-sdk label:before,#onetrust-banner-sdk label:after,#onetrust-banner-sdk .checkbox:after,#onetrust-banner-sdk .checkbox:before,#onetrust-pc-sdk label:before,#onetrust-pc-sdk label:after,#onetrust-pc-sdk .checkbox:after,#onetrust-pc-sdk .checkbox:before,#ot-sdk-cookie-policy label:before,#ot-sdk-cookie-policy label:after,#ot-sdk-cookie-policy .checkbox:after,#ot-sdk-cookie-policy .checkbox:before,#ot-sync-ntfy label:before,#ot-sync-ntfy label:after,#ot-sync-ntfy .checkbox:after,#ot-sync-ntfy .checkbox:before{content:"";content:none}
+#onetrust-banner-sdk .ot-sdk-container,#onetrust-pc-sdk .ot-sdk-container,#ot-sdk-cookie-policy .ot-sdk-container{position:relative;width:100%;max-width:100%;margin:0 auto;padding:0 20px;box-sizing:border-box}#onetrust-banner-sdk .ot-sdk-column,#onetrust-banner-sdk .ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-column,#onetrust-pc-sdk .ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-columns{width:100%;float:left;box-sizing:border-box;padding:0;display:initial}@media (min-width: 400px){#onetrust-banner-sdk .ot-sdk-container,#onetrust-pc-sdk .ot-sdk-container,#ot-sdk-cookie-policy .ot-sdk-container{width:90%;padding:0}}@media (min-width: 550px){#onetrust-banner-sdk .ot-sdk-container,#onetrust-pc-sdk .ot-sdk-container,#ot-sdk-cookie-policy .ot-sdk-container{width:100%}#onetrust-banner-sdk .ot-sdk-column,#onetrust-banner-sdk .ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-column,#onetrust-pc-sdk .ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-columns{margin-left:4%}#onetrust-banner-sdk .ot-sdk-column:first-child,#onetrust-banner-sdk .ot-sdk-columns:first-child,#onetrust-pc-sdk .ot-sdk-column:first-child,#onetrust-pc-sdk .ot-sdk-columns:first-child,#ot-sdk-cookie-policy .ot-sdk-column:first-child,#ot-sdk-cookie-policy .ot-sdk-columns:first-child{margin-left:0}#onetrust-banner-sdk .ot-sdk-one.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-one.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-one.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-one.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-one.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-one.ot-sdk-columns{width:4.66666666667%}#onetrust-banner-sdk .ot-sdk-two.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-two.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-two.ot-sdk-columns{width:13.3333333333%}#onetrust-banner-sdk .ot-sdk-three.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-three.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-three.ot-sdk-columns{width:22%}#onetrust-banner-sdk .ot-sdk-four.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-four.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-four.ot-sdk-columns{width:30.6666666667%}#onetrust-banner-sdk .ot-sdk-five.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-five.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-five.ot-sdk-columns{width:39.3333333333%}#onetrust-banner-sdk .ot-sdk-six.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-six.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-six.ot-sdk-columns{width:48%}#onetrust-banner-sdk .ot-sdk-seven.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-seven.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-seven.ot-sdk-columns{width:56.6666666667%}#onetrust-banner-sdk .ot-sdk-eight.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-eight.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-eight.ot-sdk-columns{width:65.3333333333%}#onetrust-banner-sdk .ot-sdk-nine.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-nine.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-nine.ot-sdk-columns{width:74%}#onetrust-banner-sdk .ot-sdk-ten.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-ten.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-ten.ot-sdk-columns{width:82.6666666667%}#onetrust-banner-sdk .ot-sdk-eleven.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-eleven.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-eleven.ot-sdk-columns{width:91.3333333333%}#onetrust-banner-sdk .ot-sdk-twelve.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-twelve.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-twelve.ot-sdk-columns{width:100%;margin-left:0}#onetrust-banner-sdk .ot-sdk-one-third.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-one-third.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-one-third.ot-sdk-column{width:30.6666666667%}#onetrust-banner-sdk .ot-sdk-two-thirds.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-two-thirds.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-two-thirds.ot-sdk-column{width:65.3333333333%}#onetrust-banner-sdk .ot-sdk-one-half.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-one-half.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-one-half.ot-sdk-column{width:48%}#onetrust-banner-sdk .ot-sdk-offset-by-one.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-one.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-one.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-one.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-one.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-one.ot-sdk-columns{margin-left:8.66666666667%}#onetrust-banner-sdk .ot-sdk-offset-by-two.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-two.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-two.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-two.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-two.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-two.ot-sdk-columns{margin-left:17.3333333333%}#onetrust-banner-sdk .ot-sdk-offset-by-three.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-three.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-three.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-three.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-three.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-three.ot-sdk-columns{margin-left:26%}#onetrust-banner-sdk .ot-sdk-offset-by-four.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-four.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-four.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-four.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-four.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-four.ot-sdk-columns{margin-left:34.6666666667%}#onetrust-banner-sdk .ot-sdk-offset-by-five.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-five.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-five.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-five.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-five.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-five.ot-sdk-columns{margin-left:43.3333333333%}#onetrust-banner-sdk .ot-sdk-offset-by-six.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-six.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-six.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-six.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-six.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-six.ot-sdk-columns{margin-left:52%}#onetrust-banner-sdk .ot-sdk-offset-by-seven.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-seven.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-seven.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-seven.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-seven.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-seven.ot-sdk-columns{margin-left:60.6666666667%}#onetrust-banner-sdk .ot-sdk-offset-by-eight.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-eight.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-eight.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-eight.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-eight.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-eight.ot-sdk-columns{margin-left:69.3333333333%}#onetrust-banner-sdk .ot-sdk-offset-by-nine.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-nine.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-nine.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-nine.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-nine.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-nine.ot-sdk-columns{margin-left:78%}#onetrust-banner-sdk .ot-sdk-offset-by-ten.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-ten.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-ten.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-ten.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-ten.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-ten.ot-sdk-columns{margin-left:86.6666666667%}#onetrust-banner-sdk .ot-sdk-offset-by-eleven.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-eleven.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-eleven.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-eleven.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-eleven.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-eleven.ot-sdk-columns{margin-left:95.3333333333%}#onetrust-banner-sdk .ot-sdk-offset-by-one-third.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-one-third.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-one-third.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-one-third.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-one-third.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-one-third.ot-sdk-columns{margin-left:34.6666666667%}#onetrust-banner-sdk .ot-sdk-offset-by-two-thirds.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-two-thirds.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-two-thirds.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-two-thirds.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-two-thirds.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-two-thirds.ot-sdk-columns{margin-left:69.3333333333%}#onetrust-banner-sdk .ot-sdk-offset-by-one-half.ot-sdk-column,#onetrust-banner-sdk .ot-sdk-offset-by-one-half.ot-sdk-columns,#onetrust-pc-sdk .ot-sdk-offset-by-one-half.ot-sdk-column,#onetrust-pc-sdk .ot-sdk-offset-by-one-half.ot-sdk-columns,#ot-sdk-cookie-policy .ot-sdk-offset-by-one-half.ot-sdk-column,#ot-sdk-cookie-policy .ot-sdk-offset-by-one-half.ot-sdk-columns{margin-left:52%}}#onetrust-banner-sdk h1,#onetrust-banner-sdk h2,#onetrust-banner-sdk h3,#onetrust-banner-sdk h4,#onetrust-banner-sdk h5,#onetrust-banner-sdk h6,#onetrust-pc-sdk h1,#onetrust-pc-sdk h2,#onetrust-pc-sdk h3,#onetrust-pc-sdk h4,#onetrust-pc-sdk h5,#onetrust-pc-sdk h6,#ot-sdk-cookie-policy h1,#ot-sdk-cookie-policy h2,#ot-sdk-cookie-policy h3,#ot-sdk-cookie-policy h4,#ot-sdk-cookie-policy h5,#ot-sdk-cookie-policy h6{margin-top:0;font-weight:600;font-family:inherit}#onetrust-banner-sdk h1,#onetrust-pc-sdk h1,#ot-sdk-cookie-policy h1{font-size:1.5rem;line-height:1.2}#onetrust-banner-sdk h2,#onetrust-pc-sdk h2,#ot-sdk-cookie-policy h2{font-size:1.5rem;line-height:1.25}#onetrust-banner-sdk h3,#onetrust-pc-sdk h3,#ot-sdk-cookie-policy h3{font-size:1.5rem;line-height:1.3}#onetrust-banner-sdk h4,#onetrust-pc-sdk h4,#ot-sdk-cookie-policy h4{font-size:1.5rem;line-height:1.35}#onetrust-banner-sdk h5,#onetrust-pc-sdk h5,#ot-sdk-cookie-policy h5{font-size:1.5rem;line-height:1.5}#onetrust-banner-sdk h6,#onetrust-pc-sdk h6,#ot-sdk-cookie-policy h6{font-size:1.5rem;line-height:1.6}@media (min-width: 550px){#onetrust-banner-sdk h1,#onetrust-pc-sdk h1,#ot-sdk-cookie-policy h1{font-size:1.5rem}#onetrust-banner-sdk h2,#onetrust-pc-sdk h2,#ot-sdk-cookie-policy h2{font-size:1.5rem}#onetrust-banner-sdk h3,#onetrust-pc-sdk h3,#ot-sdk-cookie-policy h3{font-size:1.5rem}#onetrust-banner-sdk h4,#onetrust-pc-sdk h4,#ot-sdk-cookie-policy h4{font-size:1.5rem}#onetrust-banner-sdk h5,#onetrust-pc-sdk h5,#ot-sdk-cookie-policy h5{font-size:1.5rem}#onetrust-banner-sdk h6,#onetrust-pc-sdk h6,#ot-sdk-cookie-policy h6{font-size:1.5rem}}#onetrust-banner-sdk p,#onetrust-pc-sdk p,#ot-sdk-cookie-policy p{margin:0 0 1em 0;font-family:inherit;line-height:normal}#onetrust-banner-sdk a,#onetrust-pc-sdk a,#ot-sdk-cookie-policy a{color:#565656;text-decoration:underline}#onetrust-banner-sdk a:hover,#onetrust-pc-sdk a:hover,#ot-sdk-cookie-policy a:hover{color:#565656;text-decoration:none}#onetrust-banner-sdk .ot-sdk-button,#onetrust-banner-sdk button,#onetrust-pc-sdk .ot-sdk-button,#onetrust-pc-sdk button,#ot-sdk-cookie-policy .ot-sdk-button,#ot-sdk-cookie-policy button{margin-bottom:1rem;font-family:inherit}#onetrust-banner-sdk .ot-sdk-button,#onetrust-banner-sdk button,#onetrust-banner-sdk input[type="submit"],#onetrust-banner-sdk input[type="reset"],#onetrust-banner-sdk input[type="button"],#onetrust-pc-sdk .ot-sdk-button,#onetrust-pc-sdk button,#onetrust-pc-sdk input[type="submit"],#onetrust-pc-sdk input[type="reset"],#onetrust-pc-sdk input[type="button"],#ot-sdk-cookie-policy .ot-sdk-button,#ot-sdk-cookie-policy button,#ot-sdk-cookie-policy input[type="submit"],#ot-sdk-cookie-policy input[type="reset"],#ot-sdk-cookie-policy input[type="button"]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:0.9em;font-weight:400;line-height:38px;letter-spacing:0.01em;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:2px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}#onetrust-banner-sdk .ot-sdk-button:hover,#onetrust-banner-sdk :not(.ot-leg-btn-container)>button:hover,#onetrust-banner-sdk input[type="submit"]:hover,#onetrust-banner-sdk input[type="reset"]:hover,#onetrust-banner-sdk input[type="button"]:hover,#onetrust-banner-sdk .ot-sdk-button:focus,#onetrust-banner-sdk :not(.ot-leg-btn-container)>button:focus,#onetrust-banner-sdk input[type="submit"]:focus,#onetrust-banner-sdk input[type="reset"]:focus,#onetrust-banner-sdk input[type="button"]:focus,#onetrust-pc-sdk .ot-sdk-button:hover,#onetrust-pc-sdk :not(.ot-leg-btn-container)>button:hover,#onetrust-pc-sdk input[type="submit"]:hover,#onetrust-pc-sdk input[type="reset"]:hover,#onetrust-pc-sdk input[type="button"]:hover,#onetrust-pc-sdk .ot-sdk-button:focus,#onetrust-pc-sdk :not(.ot-leg-btn-container)>button:focus,#onetrust-pc-sdk input[type="submit"]:focus,#onetrust-pc-sdk input[type="reset"]:focus,#onetrust-pc-sdk input[type="button"]:focus,#ot-sdk-cookie-policy .ot-sdk-button:hover,#ot-sdk-cookie-policy :not(.ot-leg-btn-container)>button:hover,#ot-sdk-cookie-policy input[type="submit"]:hover,#ot-sdk-cookie-policy input[type="reset"]:hover,#ot-sdk-cookie-policy input[type="button"]:hover,#ot-sdk-cookie-policy .ot-sdk-button:focus,#ot-sdk-cookie-policy :not(.ot-leg-btn-container)>button:focus,#ot-sdk-cookie-policy input[type="submit"]:focus,#ot-sdk-cookie-policy input[type="reset"]:focus,#ot-sdk-cookie-policy input[type="button"]:focus{color:#333;border-color:#888;opacity:0.7}#onetrust-banner-sdk .ot-sdk-button:focus,#onetrust-banner-sdk :not(.ot-leg-btn-container)>button:focus,#onetrust-banner-sdk input[type="submit"]:focus,#onetrust-banner-sdk input[type="reset"]:focus,#onetrust-banner-sdk input[type="button"]:focus,#onetrust-pc-sdk .ot-sdk-button:focus,#onetrust-pc-sdk :not(.ot-leg-btn-container)>button:focus,#onetrust-pc-sdk input[type="submit"]:focus,#onetrust-pc-sdk input[type="reset"]:focus,#onetrust-pc-sdk input[type="button"]:focus,#ot-sdk-cookie-policy .ot-sdk-button:focus,#ot-sdk-cookie-policy :not(.ot-leg-btn-container)>button:focus,#ot-sdk-cookie-policy input[type="submit"]:focus,#ot-sdk-cookie-policy input[type="reset"]:focus,#ot-sdk-cookie-policy input[type="button"]:focus{outline:2px solid #000}#onetrust-banner-sdk .ot-sdk-button.ot-sdk-button-primary,#onetrust-banner-sdk button.ot-sdk-button-primary,#onetrust-banner-sdk input[type="submit"].ot-sdk-button-primary,#onetrust-banner-sdk input[type="reset"].ot-sdk-button-primary,#onetrust-banner-sdk input[type="button"].ot-sdk-button-primary,#onetrust-pc-sdk .ot-sdk-button.ot-sdk-button-primary,#onetrust-pc-sdk button.ot-sdk-button-primary,#onetrust-pc-sdk input[type="submit"].ot-sdk-button-primary,#onetrust-pc-sdk input[type="reset"].ot-sdk-button-primary,#onetrust-pc-sdk input[type="button"].ot-sdk-button-primary,#ot-sdk-cookie-policy .ot-sdk-button.ot-sdk-button-primary,#ot-sdk-cookie-policy button.ot-sdk-button-primary,#ot-sdk-cookie-policy input[type="submit"].ot-sdk-button-primary,#ot-sdk-cookie-policy input[type="reset"].ot-sdk-button-primary,#ot-sdk-cookie-policy input[type="button"].ot-sdk-button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}#onetrust-banner-sdk .ot-sdk-button.ot-sdk-button-primary:hover,#onetrust-banner-sdk button.ot-sdk-button-primary:hover,#onetrust-banner-sdk input[type="submit"].ot-sdk-button-primary:hover,#onetrust-banner-sdk input[type="reset"].ot-sdk-button-primary:hover,#onetrust-banner-sdk input[type="button"].ot-sdk-button-primary:hover,#onetrust-banner-sdk .ot-sdk-button.ot-sdk-button-primary:focus,#onetrust-banner-sdk button.ot-sdk-button-primary:focus,#onetrust-banner-sdk input[type="submit"].ot-sdk-button-primary:focus,#onetrust-banner-sdk input[type="reset"].ot-sdk-button-primary:focus,#onetrust-banner-sdk input[type="button"].ot-sdk-button-primary:focus,#onetrust-pc-sdk .ot-sdk-button.ot-sdk-button-primary:hover,#onetrust-pc-sdk button.ot-sdk-button-primary:hover,#onetrust-pc-sdk input[type="submit"].ot-sdk-button-primary:hover,#onetrust-pc-sdk input[type="reset"].ot-sdk-button-primary:hover,#onetrust-pc-sdk input[type="button"].ot-sdk-button-primary:hover,#onetrust-pc-sdk .ot-sdk-button.ot-sdk-button-primary:focus,#onetrust-pc-sdk button.ot-sdk-button-primary:focus,#onetrust-pc-sdk input[type="submit"].ot-sdk-button-primary:focus,#onetrust-pc-sdk input[type="reset"].ot-sdk-button-primary:focus,#onetrust-pc-sdk input[type="button"].ot-sdk-button-primary:focus,#ot-sdk-cookie-policy .ot-sdk-button.ot-sdk-button-primary:hover,#ot-sdk-cookie-policy button.ot-sdk-button-primary:hover,#ot-sdk-cookie-policy input[type="submit"].ot-sdk-button-primary:hover,#ot-sdk-cookie-policy input[type="reset"].ot-sdk-button-primary:hover,#ot-sdk-cookie-policy input[type="button"].ot-sdk-button-primary:hover,#ot-sdk-cookie-policy .ot-sdk-button.ot-sdk-button-primary:focus,#ot-sdk-cookie-policy button.ot-sdk-button-primary:focus,#ot-sdk-cookie-policy input[type="submit"].ot-sdk-button-primary:focus,#ot-sdk-cookie-policy input[type="reset"].ot-sdk-button-primary:focus,#ot-sdk-cookie-policy input[type="button"].ot-sdk-button-primary:focus{color:#fff;background-color:#1eaedb;border-color:#1eaedb}#onetrust-banner-sdk input[type="email"],#onetrust-banner-sdk input[type="number"],#onetrust-banner-sdk input[type="search"],#onetrust-banner-sdk input[type="text"],#onetrust-banner-sdk input[type="tel"],#onetrust-banner-sdk input[type="url"],#onetrust-banner-sdk input[type="password"],#onetrust-banner-sdk textarea,#onetrust-banner-sdk select,#onetrust-pc-sdk input[type="email"],#onetrust-pc-sdk input[type="number"],#onetrust-pc-sdk input[type="search"],#onetrust-pc-sdk input[type="text"],#onetrust-pc-sdk input[type="tel"],#onetrust-pc-sdk input[type="url"],#onetrust-pc-sdk input[type="password"],#onetrust-pc-sdk textarea,#onetrust-pc-sdk select,#ot-sdk-cookie-policy input[type="email"],#ot-sdk-cookie-policy input[type="number"],#ot-sdk-cookie-policy input[type="search"],#ot-sdk-cookie-policy input[type="text"],#ot-sdk-cookie-policy input[type="tel"],#ot-sdk-cookie-policy input[type="url"],#ot-sdk-cookie-policy input[type="password"],#ot-sdk-cookie-policy textarea,#ot-sdk-cookie-policy select{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}#onetrust-banner-sdk input[type="email"],#onetrust-banner-sdk input[type="number"],#onetrust-banner-sdk input[type="search"],#onetrust-banner-sdk input[type="text"],#onetrust-banner-sdk input[type="tel"],#onetrust-banner-sdk input[type="url"],#onetrust-banner-sdk input[type="password"],#onetrust-banner-sdk textarea,#onetrust-pc-sdk input[type="email"],#onetrust-pc-sdk input[type="number"],#onetrust-pc-sdk input[type="search"],#onetrust-pc-sdk input[type="text"],#onetrust-pc-sdk input[type="tel"],#onetrust-pc-sdk input[type="url"],#onetrust-pc-sdk input[type="password"],#onetrust-pc-sdk textarea,#ot-sdk-cookie-policy input[type="email"],#ot-sdk-cookie-policy input[type="number"],#ot-sdk-cookie-policy input[type="search"],#ot-sdk-cookie-policy input[type="text"],#ot-sdk-cookie-policy input[type="tel"],#ot-sdk-cookie-policy input[type="url"],#ot-sdk-cookie-policy input[type="password"],#ot-sdk-cookie-policy textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}#onetrust-banner-sdk textarea,#onetrust-pc-sdk textarea,#ot-sdk-cookie-policy textarea{min-height:65px;padding-top:6px;padding-bottom:6px}#onetrust-banner-sdk input[type="email"]:focus,#onetrust-banner-sdk input[type="number"]:focus,#onetrust-banner-sdk input[type="search"]:focus,#onetrust-banner-sdk input[type="text"]:focus,#onetrust-banner-sdk input[type="tel"]:focus,#onetrust-banner-sdk input[type="url"]:focus,#onetrust-banner-sdk input[type="password"]:focus,#onetrust-banner-sdk textarea:focus,#onetrust-banner-sdk select:focus,#onetrust-pc-sdk input[type="email"]:focus,#onetrust-pc-sdk input[type="number"]:focus,#onetrust-pc-sdk input[type="search"]:focus,#onetrust-pc-sdk input[type="text"]:focus,#onetrust-pc-sdk input[type="tel"]:focus,#onetrust-pc-sdk input[type="url"]:focus,#onetrust-pc-sdk input[type="password"]:focus,#onetrust-pc-sdk textarea:focus,#onetrust-pc-sdk select:focus,#ot-sdk-cookie-policy input[type="email"]:focus,#ot-sdk-cookie-policy input[type="number"]:focus,#ot-sdk-cookie-policy input[type="search"]:focus,#ot-sdk-cookie-policy input[type="text"]:focus,#ot-sdk-cookie-policy input[type="tel"]:focus,#ot-sdk-cookie-policy input[type="url"]:focus,#ot-sdk-cookie-policy input[type="password"]:focus,#ot-sdk-cookie-policy textarea:focus,#ot-sdk-cookie-policy select:focus{border:1px solid #000;outline:0}#onetrust-banner-sdk label,#onetrust-banner-sdk legend,#onetrust-pc-sdk label,#onetrust-pc-sdk legend,#ot-sdk-cookie-policy label,#ot-sdk-cookie-policy legend{display:block;margin-bottom:0.5rem;font-weight:600}#onetrust-banner-sdk fieldset,#onetrust-pc-sdk fieldset,#ot-sdk-cookie-policy fieldset{padding:0;border-width:0}#onetrust-banner-sdk input[type="checkbox"],#onetrust-banner-sdk input[type="radio"],#onetrust-pc-sdk input[type="checkbox"],#onetrust-pc-sdk input[type="radio"],#ot-sdk-cookie-policy input[type="checkbox"],#ot-sdk-cookie-policy input[type="radio"]{display:inline}#onetrust-banner-sdk label>.label-body,#onetrust-pc-sdk label>.label-body,#ot-sdk-cookie-policy label>.label-body{display:inline-block;margin-left:0.5rem;font-weight:normal}#onetrust-banner-sdk ul,#onetrust-pc-sdk ul,#ot-sdk-cookie-policy ul{list-style:circle inside}#onetrust-banner-sdk ol,#onetrust-pc-sdk ol,#ot-sdk-cookie-policy ol{list-style:decimal inside}#onetrust-banner-sdk ol,#onetrust-banner-sdk ul,#onetrust-pc-sdk ol,#onetrust-pc-sdk ul,#ot-sdk-cookie-policy ol,#ot-sdk-cookie-policy ul{padding-left:0;margin-top:0}#onetrust-banner-sdk ul ul,#onetrust-banner-sdk ul ol,#onetrust-banner-sdk ol ol,#onetrust-banner-sdk ol ul,#onetrust-pc-sdk ul ul,#onetrust-pc-sdk ul ol,#onetrust-pc-sdk ol ol,#onetrust-pc-sdk ol ul,#ot-sdk-cookie-policy ul ul,#ot-sdk-cookie-policy ul ol,#ot-sdk-cookie-policy ol ol,#ot-sdk-cookie-policy ol ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}#onetrust-banner-sdk li,#onetrust-pc-sdk li,#ot-sdk-cookie-policy li{margin-bottom:1rem}#onetrust-banner-sdk code,#onetrust-pc-sdk code,#ot-sdk-cookie-policy code{padding:0.2rem 0.5rem;margin:0 0.2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}#onetrust-banner-sdk pre>code,#onetrust-pc-sdk pre>code,#ot-sdk-cookie-policy pre>code{display:block;padding:1rem 1.5rem;white-space:pre}#onetrust-banner-sdk th,#onetrust-banner-sdk td,#onetrust-pc-sdk th,#onetrust-pc-sdk td,#ot-sdk-cookie-policy th,#ot-sdk-cookie-policy td{padding:12px 15px;text-align:left;border-bottom:1px solid #e1e1e1}#onetrust-banner-sdk .ot-sdk-u-full-width,#onetrust-pc-sdk .ot-sdk-u-full-width,#ot-sdk-cookie-policy .ot-sdk-u-full-width{width:100%;box-sizing:border-box}#onetrust-banner-sdk .ot-sdk-u-max-full-width,#onetrust-pc-sdk .ot-sdk-u-max-full-width,#ot-sdk-cookie-policy .ot-sdk-u-max-full-width{max-width:100%;box-sizing:border-box}#onetrust-banner-sdk .ot-sdk-u-pull-right,#onetrust-pc-sdk .ot-sdk-u-pull-right,#ot-sdk-cookie-policy .ot-sdk-u-pull-right{float:right}#onetrust-banner-sdk .ot-sdk-u-pull-left,#onetrust-pc-sdk .ot-sdk-u-pull-left,#ot-sdk-cookie-policy .ot-sdk-u-pull-left{float:left}#onetrust-banner-sdk hr,#onetrust-pc-sdk hr,#ot-sdk-cookie-policy hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}#onetrust-banner-sdk .ot-sdk-container:after,#onetrust-banner-sdk .ot-sdk-row:after,#onetrust-banner-sdk .ot-sdk-u-cf,#onetrust-pc-sdk .ot-sdk-container:after,#onetrust-pc-sdk .ot-sdk-row:after,#onetrust-pc-sdk .ot-sdk-u-cf,#ot-sdk-cookie-policy .ot-sdk-container:after,#ot-sdk-cookie-policy .ot-sdk-row:after,#ot-sdk-cookie-policy .ot-sdk-u-cf{content:"";display:table;clear:both}#onetrust-banner-sdk .ot-sdk-row,#onetrust-pc-sdk .ot-sdk-row,#ot-sdk-cookie-policy .ot-sdk-row{margin:0;max-width:none;display:block}
+#onetrust-banner-sdk{box-shadow:0 0 18px rgba(0,0,0,.2)}#onetrust-banner-sdk.otFlat{position:fixed;z-index:2147483645;bottom:0;right:0;left:0;background-color:#fff;max-height:90%;overflow-x:hidden;overflow-y:auto}#onetrust-banner-sdk>.ot-sdk-container{overflow:hidden}#onetrust-banner-sdk::-webkit-scrollbar{width:11px}#onetrust-banner-sdk::-webkit-scrollbar-thumb{border-radius:10px;background:#c1c1c1}#onetrust-banner-sdk{scrollbar-arrow-color:#c1c1c1;scrollbar-darkshadow-color:#c1c1c1;scrollbar-face-color:#c1c1c1;scrollbar-shadow-color:#c1c1c1}#onetrust-banner-sdk #onetrust-policy{margin:1.25em 0 .625em 2em;overflow:hidden}#onetrust-banner-sdk #onetrust-policy .ot-gv-list-handler{float:left;font-size:.82em;padding:0;margin-bottom:0;border:0;line-height:normal;height:auto;width:auto}#onetrust-banner-sdk #onetrust-policy-title{font-size:1.2em;line-height:1.3;margin-bottom:10px}#onetrust-banner-sdk #onetrust-policy-text{clear:both;text-align:left;font-size:.88em;line-height:1.4}#onetrust-banner-sdk #onetrust-policy-text *{font-size:inherit;line-height:inherit}#onetrust-banner-sdk #onetrust-policy-text a{font-weight:bold;margin-left:5px}#onetrust-banner-sdk #onetrust-policy-title,#onetrust-banner-sdk #onetrust-policy-text{color:dimgray;float:left}#onetrust-banner-sdk #onetrust-button-group-parent{min-height:1px;text-align:center}#onetrust-banner-sdk #onetrust-button-group{display:inline-block}#onetrust-banner-sdk #onetrust-accept-btn-handler,#onetrust-banner-sdk #onetrust-reject-all-handler,#onetrust-banner-sdk #onetrust-pc-btn-handler{background-color:#68b631;color:#fff;border-color:#68b631;margin-right:1em;min-width:125px;height:auto;white-space:normal;word-break:break-word;word-wrap:break-word;padding:12px 10px;line-height:1.2;font-size:.813em;font-weight:600}#onetrust-banner-sdk #onetrust-pc-btn-handler.cookie-setting-link{background-color:#fff;border:none;color:#68b631;text-decoration:underline;padding-left:0;padding-right:0}#onetrust-banner-sdk #onetrust-close-btn-container{text-align:center}#onetrust-banner-sdk .onetrust-close-btn-ui{width:44px;height:44px;background-size:12px;margin:50% 0 0 50%;border:none}#onetrust-banner-sdk .onetrust-close-btn-ui.onetrust-lg{top:50%;margin:auto;transform:translate(-50%, -50%);position:absolute;padding:0}#onetrust-banner-sdk .banner_logo{display:none}#onetrust-banner-sdk .ot-b-addl-desc{clear:both;float:left;display:block}#onetrust-banner-sdk #banner-options{float:left;display:table;margin-right:0;margin-left:1em;width:calc(100% - 1em)}#onetrust-banner-sdk .banner-option-input{cursor:pointer;width:auto;height:auto;border:none;padding:0;padding-right:3px;margin:0 0 10px;font-size:.82em;line-height:1.4}#onetrust-banner-sdk .banner-option-input *{pointer-events:none;font-size:inherit;line-height:inherit}#onetrust-banner-sdk .banner-option-input[aria-expanded=true]~.banner-option-details{display:block;height:auto}#onetrust-banner-sdk .banner-option-input[aria-expanded=true] .ot-arrow-container{transform:rotate(90deg)}#onetrust-banner-sdk .banner-option{margin-bottom:12px;margin-left:0;border:none;float:left;padding:0}#onetrust-banner-sdk .banner-option:first-child{padding-left:2px}#onetrust-banner-sdk .banner-option:not(:first-child){padding:0;border:none}#onetrust-banner-sdk .banner-option-header{cursor:pointer;display:inline-block}#onetrust-banner-sdk .banner-option-header :first-child{color:dimgray;font-weight:bold;float:left}#onetrust-banner-sdk .banner-option-header .ot-arrow-container{display:inline-block;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:6px solid dimgray;margin-left:10px;vertical-align:middle}#onetrust-banner-sdk .banner-option-details{display:none;font-size:.83em;line-height:1.5;padding:10px 0px 5px 10px;margin-right:10px;height:0px}#onetrust-banner-sdk .banner-option-details *{font-size:inherit;line-height:inherit;color:dimgray}#onetrust-banner-sdk .ot-arrow-container,#onetrust-banner-sdk .banner-option-details{transition:all 300ms ease-in 0s;-webkit-transition:all 300ms ease-in 0s;-moz-transition:all 300ms ease-in 0s;-o-transition:all 300ms ease-in 0s}#onetrust-banner-sdk .ot-dpd-container{float:left}#onetrust-banner-sdk .ot-dpd-title{margin-bottom:10px}#onetrust-banner-sdk .ot-dpd-title,#onetrust-banner-sdk .ot-dpd-desc{font-size:.88em;line-height:1.4;color:dimgray}#onetrust-banner-sdk .ot-dpd-title *,#onetrust-banner-sdk .ot-dpd-desc *{font-size:inherit;line-height:inherit}#onetrust-banner-sdk.ot-iab-2 #onetrust-policy-text *{margin-bottom:0}#onetrust-banner-sdk.ot-iab-2 .onetrust-vendors-list-handler{display:block;margin-left:0;margin-top:5px;clear:both;margin-bottom:0;padding:0;border:0;height:auto;width:auto}#onetrust-banner-sdk.ot-iab-2 #onetrust-button-group button{display:block}#onetrust-banner-sdk #onetrust-policy-text,#onetrust-banner-sdk .ot-dpd-desc,#onetrust-banner-sdk .ot-b-addl-desc{font-size:.813em;line-height:1.5}#onetrust-banner-sdk .ot-dpd-desc{margin-bottom:10px}#onetrust-banner-sdk .ot-dpd-desc>.ot-b-addl-desc{margin-top:10px;margin-bottom:10px;font-size:1em}@media only screen and (max-width: 425px){#onetrust-banner-sdk #onetrust-policy{margin-left:0}#onetrust-banner-sdk .ot-hide-small{display:none}#onetrust-banner-sdk #onetrust-button-group{display:block}#onetrust-banner-sdk #onetrust-accept-btn-handler,#onetrust-banner-sdk #onetrust-reject-all-handler,#onetrust-banner-sdk #onetrust-pc-btn-handler{width:100%}#onetrust-banner-sdk .onetrust-close-btn-ui{margin:-10px -10px 0 0;float:right;padding:0}#onetrust-banner-sdk #onetrust-close-btn-container-mobile,#onetrust-banner-sdk #onetrust-policy-title{display:inline;float:none}#onetrust-banner-sdk #banner-options{margin:0;padding:0;width:100%}}@media only screen and (min-width: 426px)and (max-width: 896px){#onetrust-banner-sdk #onetrust-policy{margin-left:1em;margin-right:1em}#onetrust-banner-sdk .onetrust-close-btn-ui.onetrust-lg{top:25px;right:-15px}#onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container{width:95%}#onetrust-banner-sdk.ot-iab-2 #onetrust-group-container{width:100%}#onetrust-banner-sdk #onetrust-button-group-parent{width:100%;position:relative;margin-left:0}#onetrust-banner-sdk .ot-hide-large{display:none}#onetrust-banner-sdk #onetrust-button-group button{display:inline-block}#onetrust-banner-sdk #onetrust-button-group{margin-right:0;text-align:center}#onetrust-banner-sdk .has-reject-all-button #onetrust-pc-btn-handler{float:left}#onetrust-banner-sdk .has-reject-all-button #onetrust-reject-all-handler,#onetrust-banner-sdk .has-reject-all-button #onetrust-accept-btn-handler{float:right}#onetrust-banner-sdk .has-reject-all-button #onetrust-button-group{width:calc(100% - 2em);margin-right:0}#onetrust-banner-sdk .has-reject-all-button #onetrust-pc-btn-handler.cookie-setting-link{padding-left:0px;text-align:left}#onetrust-banner-sdk.ot-buttons-fw .ot-sdk-three button{width:100%;text-align:center}#onetrust-banner-sdk.ot-buttons-fw #onetrust-button-group-parent button{float:none}#onetrust-banner-sdk.ot-buttons-fw #onetrust-pc-btn-handler.cookie-setting-link{text-align:center}}@media only screen and (min-width: 550px){#onetrust-banner-sdk .banner-option:not(:first-child){border-left:1px solid #d8d8d8;padding-left:25px}}@media only screen and (min-width: 425px)and (max-width: 550px){#onetrust-banner-sdk.ot-iab-2 #onetrust-button-group,#onetrust-banner-sdk.ot-iab-2 #onetrust-policy,#onetrust-banner-sdk.ot-iab-2 .banner-option{width:100%}}@media only screen and (min-width: 769px){#onetrust-banner-sdk .ot-hide-large{display:none}#onetrust-banner-sdk #onetrust-button-group{margin-right:30%}#onetrust-banner-sdk #banner-options{margin-left:2em;margin-right:5em;margin-bottom:1.25em;width:calc(100% - 7em)}}@media only screen and (min-width: 897px)and (max-width: 1023px){#onetrust-banner-sdk.vertical-align-content #onetrust-button-group-parent{position:absolute;top:50%;left:75%;transform:translateY(-50%)}#onetrust-banner-sdk #onetrust-close-btn-container{float:right}}@media only screen and (min-width: 1024px){#onetrust-banner-sdk #onetrust-policy{margin-left:2em}#onetrust-banner-sdk.vertical-align-content #onetrust-button-group-parent{position:absolute;top:50%;left:60%;transform:translateY(-50%)}#onetrust-banner-sdk.ot-iab-2 #onetrust-policy-title{width:50%}#onetrust-banner-sdk.ot-iab-2 #onetrust-policy-text,#onetrust-banner-sdk.ot-iab-2 :not(.ot-dpd-desc)>.ot-b-addl-desc{margin-bottom:1em;width:50%;border-right:1px solid #d8d8d8;padding-right:1rem}#onetrust-banner-sdk.ot-iab-2 #onetrust-policy-text{margin-bottom:0;padding-bottom:1em}#onetrust-banner-sdk.ot-iab-2 :not(.ot-dpd-desc)>.ot-b-addl-desc{margin-bottom:0;padding-bottom:1em}#onetrust-banner-sdk.ot-iab-2 .ot-dpd-container{width:45%;padding-left:1rem;display:inline-block;float:none}#onetrust-banner-sdk.ot-iab-2 .ot-dpd-title{line-height:1.7}#onetrust-banner-sdk.ot-iab-2 #onetrust-button-group-parent{left:auto;right:4%;margin-left:0}#onetrust-banner-sdk.ot-iab-2 #onetrust-button-group button{display:block}#onetrust-banner-sdk:not(.ot-iab-2) #onetrust-button-group-parent{margin:auto;width:30%}#onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container{width:60%}#onetrust-banner-sdk #onetrust-button-group{margin-right:auto}#onetrust-banner-sdk #onetrust-close-btn-container{float:right}#onetrust-banner-sdk #onetrust-accept-btn-handler,#onetrust-banner-sdk #onetrust-reject-all-handler,#onetrust-banner-sdk #onetrust-pc-btn-handler{margin-top:1em}}@media only screen and (min-width: 890px){#onetrust-banner-sdk.ot-buttons-fw:not(.ot-iab-2) #onetrust-button-group-parent{padding-left:4%;margin-left:0}#onetrust-banner-sdk.ot-buttons-fw:not(.ot-iab-2) #onetrust-button-group{margin-right:0;margin-top:1.25em;width:100%}#onetrust-banner-sdk.ot-buttons-fw:not(.ot-iab-2) #onetrust-button-group button{width:100%;margin-bottom:5px;margin-top:5px}#onetrust-banner-sdk.ot-buttons-fw:not(.ot-iab-2) #onetrust-button-group button:last-of-type{margin-bottom:20px}}@media o
