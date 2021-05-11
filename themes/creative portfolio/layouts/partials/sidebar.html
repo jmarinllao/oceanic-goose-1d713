@@ -5,13 +5,7 @@
     <img src="/img/interface/LondonCOV.png" alt="Italian Trulli">
     {{ range .Site.Params.sidebarAbout }}
       <p class="sidebar-p">{{ . | safeHTML }}</p>
-    {{ end }}
-    <ul class="sidebar-menu">
-      {{ range .Site.Params.navlinks }}
-        <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
-      {{ end }}
-    </ul>
-    
+    {{ end }}    
     <iframe width="105%" height="1000" frameborder="0"
     src="https://observablehq.com/embed/@jmarinllao/untitled/3?cell=*"></iframe>
 
