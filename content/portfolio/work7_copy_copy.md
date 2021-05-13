@@ -1,5 +1,5 @@
 ---
-image: img/Plots/boxplot1.png
+image: img/Plots/boxplot2.png
 showonlyimage: false
 date: '2016-11-05T19:57:40+05:30'
 title: Boxplots
