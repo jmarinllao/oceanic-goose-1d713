@@ -6,8 +6,16 @@
     {{ range .Site.Params.sidebarAbout }}
       <p class="sidebar-p">{{ . | safeHTML }}</p>
     {{ end }}    
- 
-    {{ partial "social_buttons_in_sidebar.html" . }}
+
+    <iframe width="120%" height="695" frameborder="0"
+  src="https://observablehq.com/embed/@jmarinllao/untitled/5?cells=viewof+changeCheckbox%2CchartChange">
+</iframe> 
+
+<iframe width="115%" height="650" frameborder="0"
+  src="https://observablehq.com/embed/@jmarinllao/untitled/4?cells=chartChange">
+</iframe> 
+
+{{ partial "social_buttons_in_sidebar.html" . }}
 
     <div class="copyright">
       <p class="credit">
@@ -17,13 +25,6 @@
         {{ partial "attribution.html" . }}
       </p>
     </div>
-    <iframe width="120%" height="695" frameborder="0"
-  src="https://observablehq.com/embed/@jmarinllao/untitled/5?cells=viewof+changeCheckbox%2CchartChange">
-</iframe> 
-
-<iframe width="115%" height="650" frameborder="0"
-  src="https://observablehq.com/embed/@jmarinllao/untitled/4?cells=chartChange">
-</iframe> 
     </div>
     
 </div>
