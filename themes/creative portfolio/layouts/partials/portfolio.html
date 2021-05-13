@@ -92,6 +92,15 @@
           {{ range .Data.Pages }}
               <div class="col-xs-6 masonry-item">
                   <div class="box-masonry">
+                      {{ if and (isset .Params "image") .Params.image }}
+                        {{ if eq .Params.showonlyimage true }}
+                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+                        {{ else }}
+                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                        {{ end }}
+                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                        </a>
+                      {{ end }}
                       {{ if eq .Params.showonlyimage true }}
                       <div class="box-masonry-hover-text-header">
                       {{ else }}
