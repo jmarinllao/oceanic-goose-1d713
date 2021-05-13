@@ -89,7 +89,8 @@
                           <img src="/img/Plots/MapVaccines1.png" alt="COVID">
                   </div>
             </div>
-         <div class="col-xs-6 masonry-item">
+          {{ range .Data.Pages }}
+              <div class="col-xs-6 masonry-item">
                   <div class="box-masonry">
                       {{ if eq .Params.showonlyimage true }}
                       <div class="box-masonry-hover-text-header">
@@ -109,6 +110,7 @@
                       </div>
                   </div>
               </div>
+          {{ end }}
         </div>
     </div>
 </div>
