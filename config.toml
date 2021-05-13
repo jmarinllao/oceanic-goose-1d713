@@ -12,7 +12,7 @@ picture  = "static/img/portfolio/business-card-26.jpg"
 [params]
 style = "default"
 description = "Describe your website"
-copyright = "&copy;2021 Social Data Anlaysis and Viz"
+copyright = "&copy;2021 Social Data Analaysis and Viz DTU"
 sidebarAbout = [
   "We are here to have fun",
   "Originally from La Cava, currently based yet in La Cava due to COVID."
