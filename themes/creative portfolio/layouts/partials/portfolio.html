@@ -57,6 +57,35 @@ With the restrictions applied again in November, a drastic devastation was shown
                             </p>
                           </div>
             </div>
+
+            <div class="col-xs-6 masonry-item">
+                  <div class="box-masonry">
+                      {{ if eq .Params.showonlyimage true }}
+                      <div class="box-masonry-hover-text-header">
+                      {{ else }}
+                      <div class="box-masonry-text">
+                      {{ end }}
+                          <h4>Correlation COVID Indicators and Social Activity</a></h4>
+                          <iframe width="95%" height="510" frameborder="0"
+  src="/Bokeh.html"></iframe>
+                          <div class="box-masonry-description">
+                            <p>
+<p><strong>This plot reports the main socio-economical indicators. We relate them with vaccinations, covid19 cases and Lockdown measures. Everything is scaled according to covid-19 cases. They activities are measured as increase or decrease in percentage of volume of affairs.</strong></p>
+<p>The boxed areas are the periods when Great britain faced the <strong>strongest</strong> period of restrictions. <a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pd"> [Timeline of UK lockdowns]</a> Anyway minor restrictions went on for periods out of the lockdowns, clearly shown by many trends.</p>
+<p>INSIGHTS:</p>
+<ol>
+<li>It's interesting to point out the <strong>effectiveness of lockdowns</strong>. Giving a first look of data seem that the first 2 lockdowns didn't helped that much, but seeing the trend of the second (great increase rate) stopping the increasing curve at the beginning it's fundamental. Moreover, we know that "an effective reduction in transmission must have occurred nearly immediately after the tighter lockdown, given the lag time of around 10 days from asymptomatic infection to diagnosis." Taking that into account we can clearly see that after a small time lag infections started to decrease <a href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(20)30201-7/fulltext">[Lockdown timing and efficacy in controlling COVID-19]</a></li>
+<li>Taking a look into activities behavior we can clearly see that, for instance, social econimcal activities had very few volume of affair during lockdowns, due to strict regulamentations of customers number and take-away only. This category is clearly the one that covid had the worse impact to, reducing retail volume dramaticaly for the whole restriction periods.</li>
+<li>Contrarywise, we can see that grocieries and pharmacies after an initial drop in sales volume remained active with a slightly increasing rate. It's important to notice a huge drop in thei sales in late december, obviously related to Christmas days.</li>
+<li><strong>We can clearly see that during weekends we have a decreasing in cases number</strong>, this is due to the fact that "testing is not functioning seven days a week, unlike Covid-19". <a href="https://www.spectator.co.uk/article/covid-19-cases-and-the-weekend-effect"> [Covid-19 cases and the weekend effect]</a></li>
+<li>5) Another interesting fact is that London (and the whole Great Britain actually) faced much more cases in the lastCovid-19 wave. It's difficult to say why. According to what Time : "experts say [...] the crisis is a result of both the struggle to deal with a new variant estimated to be up to 70% more transmissible, and because of a failure in decisive and strong government leadership. " We can infact clearly see that cases dropped after the last hard restrictions took place. <a href="https://time.com/5929246/uk-coronavirus-third-wave/"> [Third wave of covid in Great Britain]</a></li>
+<li>Least, but not last It's interesting to highlight that decreasing in retail/moving are not directly following covid cases but more follow the restrictions. And that decrease actually stopped the virus. This again shows how much restrictions are important since people without law enforcement do not realize the importance of not spreding the virus.</li>
+</ol>
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+            </div>
             
           {{ range .Data.Pages }}
               <div class="col-xs-6 masonry-item">
