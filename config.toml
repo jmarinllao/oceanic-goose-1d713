@@ -14,7 +14,10 @@ style = "default"
 description = "Describe your website"
 copyright = "&copy;2021 Social Data Analaysis and Viz DTU"
 sidebarAbout = [
-  "We are here to have fun",
+  "<p><strong>Hereby we analyze the socio-economical impact of covid 19 cases in London and give an overview of the main trends and aspects.</strong></p>
+<p>We created some visualizations that, paired with text, will highlight the main facts we found out analyzing the London Government data. </p>
+<p>The focus is on interactive visualization. This will help a user to higlight easilly the factors he is more interested into.</p>
+<p>Informations we report here are about Cases (between march2019 and May 2021), vaccinations, retail activities and mobility in the city.</p>",
   "Originally from La Cava, currently based yet in La Cava due to COVID."
 ]
 email = "you@yoursite.com"
