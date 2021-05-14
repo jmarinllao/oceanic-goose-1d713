@@ -15,7 +15,7 @@ description = "Describe your website"
 copyright = "&copy;2021 Social Data Analaysis and Viz DTU"
 sidebarAbout = [
   "<p><strong>Hereby we analyze the socio-economical impact of covid 19 cases in London and give an overview of the main trends and aspects.</strong></p>",
-"Selected visualizations (to see all check notebook) paired with their descriptive text highlight the main facts found on the analysis of London Government data. ",
+"Selected visualizations (to see all check notebook) paired with their descriptive text highlight the main facts found on the analysis of London Government<a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pd"> [Timeline of UK lockdowns]</a> data. ",
 "The focus is on interactive visualization. This help the user to higlight easilly the factors he is more interested into.",
 "The reported here are about Cases (between march 2019 and May 2021), vaccinations, retail activities and mobility in the city.",
 "<strong>The notebook link to the project's GitHub is at the bottom left part icon.</strong>"
