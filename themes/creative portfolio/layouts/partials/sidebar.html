@@ -1,0 +1,98 @@
+<pre class="sidebar-heading"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></pre>
+<div id="sidebar" class="col-xs-4 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <img src="/img/interface/LondonCOV.png" alt="Italian Trulli">
+    {{ range .Site.Params.sidebarAbout }}
+      <p class="sidebar-p">{{ . | safeHTML }}</p>
+    {{ end }}    
+    <pre class="sidebar-heading">
+COVID INDICATORS: Cases and Vaccines</a>
+</pre>
+
+ <div class="col-xs-14 masonry-item">
+                  <div class="box-masonry">
+                      {{ if and (isset .Params "image") .Params.image }}
+                        {{ if eq .Params.showonlyimage true }}
+                        <a title="" class="box-masonry-image">
+                        {{ else }}
+                        <a  title="" class="box-masonry-image ">
+                        {{ end }}
+                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                        </a>
+                      {{ end }}
+                      {{ if eq .Params.showonlyimage true }}
+                      <div class="box-masonry-hover-text-header">
+                      {{ else }}
+                      <div class="box-masonry-text">
+                      {{ end }}
+                          <h4>Cases and vaccination evolution</a></h4>
+                          <div class="box-masonry-description">
+                           
+                          </div>
+                      </div>
+                      <iframe width="100%" height="734" frameborder="0"
+  src="https://observablehq.com/embed/@jmarinllao/stacked-barchart-of-covid-19-cases-vaccinations?cells=svg%2Cviewof+date"></iframe>
+                    <div class="box-masonry-description">
+                            <p>
+                            <p><strong>This plot shows the evolution of cases and vaccines during the whole pandemic.</strong></p> 
+                            <p>INSIGHTS: Three waves can be observed in it: 
+                            The first one from March to mid-June, the second one from September to December and the third one from December to March 2021, when the vaccination plan started being effective. The second and third wave could almost be considered as only just one wave because, as it can be observed in the graph, just a few days after cases started decreasing in December, the increased again, so there was never a stabilization period. In March there is a spike in the number of vaccinations. This was when vaccines were started to be administered. However, this spike does not mean a higher number of vaccines, but a later report on the administered doses. From mid-May, there has been a considerable increase in the vaccination speed, almost reaching 6,500,000 daily doses.
+                            </p>
+                          </div>
+                  </div>
+              </div>
+
+<div class="col-xs-14 masonry-item">
+                  <div class="box-masonry">
+<iframe width="105%" height="510" frameborder="0"
+  src="/map.html"></iframe>
+
+  <div class="box-masonry-description">
+    <p>
+    <p><strong>This map shows the percentage of total cases per capita during the whole pandemic. The brighter the color shade gets, the higher cases the area has had.</strong> </p>
+    <p>INSIGHTS: For all areas, the percentage of the total number of cases varies from 5,5% to 11.5%. In section 2, it was mentioned that the absolute number of cases in the city center had been lower than in other areas. The suggested hypothesis to explain this fact was that population density was lower in the city center due to housing prices. However, from this plot, we can see how the percentage of infected people in the central areas is still lower than in the outskirts of the city. The data indicates that in the areas south of London city center, the trend of cases is lower, contrary to the upper areas. In order to say anything qualified of the reasioning, supplementary data would be needed. This could be information on for instance, job types since an office worker potentially can work from home, whereas a production worker must be physically present. Another factor could be ethnical backgrounds and family relations.
+    </p>
+    </div>
+
+   </div>
+</div>
+  
+<div class="col-xs-14 masonry-item">
+                  <div class="box-masonry">
+  <iframe width="105%" height="260" frameborder="0"
+  src="/img/Plots/boxplot2.png"></iframe>
+
+  <div class="box-masonry-description">
+        <p>
+        <p>From the plot above, it can be seen that the new daily cases in the city center have been lower during the whole pandemic. For instance, areas like Kensington and Chelsea, Kingston upon Thames and Westminster, we see that he maximum number of cases is marginally lower compared to other areas. We see that the median is also relatively low, which means that most days have had lower new cases. One of the reasons for this, could be that the density of people living in the city center is lower since housing is more expensive. In section 5, a map with the percentage of total cases per capita is plotted to investigate this hypothesis further.
+        </p>
+        </div>
+
+  </div>
+</div>
+
+<div class="col-xs-14 masonry-item">
+                  <div class="box-masonry">
+  <iframe width="135%" height="260" frameborder="0"
+  src="/img/Plots/boxplot3.png"></iframe>
+     <div class="box-masonry-description">
+        <p>
+        <p>This plot follows a normal distribution centered with the peak on younger generations, who can be assumed to have a more social and outgoing lifestyle. It is not possible to derive a single explanatory factor for the reason of the normal distribution. A number of factors may be taken into consideration when looking specifically on age groups 24 to 34 years old. Primarily, the NHS communication has been focused on protecting the elders as these are proven to be more vulnerable to COVID-19. This may have led to a sort of apathy in the younger generations. Secondly, 24- to 34-year olds are less likely to have kids and established lives. They will likely live in a shared apartment with other young people and more frequently meet new people. When comparing them to younger age groups an explanatory factor can be that the younger often live at home and still attend school which has been closed down. This has limited their social interaction.
+        </p>
+        </div>
+   </div>
+</div>
+
+{{ partial "social_buttons_in_sidebar.html" . }}
+
+    <div class="copyright">
+      <p class="credit">
+        {{ with .Site.Params.copyright }}
+          {{ . | safeHTML }} |
+        {{ end }}
+        {{ partial "attribution.html" . }}
+      </p>
+    </div>
+    </div>
+    
+</div>
