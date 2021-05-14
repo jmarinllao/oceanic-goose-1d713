@@ -61,7 +61,19 @@ Given the restrictions applied with the second September wave, the two most puni
                       {{ end }}
                           <h4>MODEL</a></h4>
                           <div class="box-masonry-description">
-                           
+                           <div id="observablehq-viewof-barchart-0e52d505"></div>
+<div id="observablehq-viewof-weekSlider-0e52d505"></div>
+<p>Credit: <a href="https://observablehq.com/@jmarinllao/flu-mcv">Flu MCV by SDAV</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@jmarinllao/flu-mcv.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof barchart") return new Inspector(document.querySelector("#observablehq-viewof-barchart-0e52d505"));
+  if (name === "viewof weekSlider") return new Inspector(document.querySelector("#observablehq-viewof-weekSlider-0e52d505"));
+  return ["worldViewUpdater"].includes(name);
+});
+</script>
                           </div>
                       </div>
                   </div>
