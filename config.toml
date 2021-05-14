@@ -17,7 +17,7 @@ sidebarAbout = [
   "<p><strong>Hereby we analyze the socio-economical impact of covid 19 cases in London and give an overview of the main trends and aspects.</strong></p>",
 "We created some visualizations that, paired with text, will highlight the main facts we found out analyzing the London Government data. ",
 "The focus is on interactive visualization. This will help a user to higlight easilly the factors he is more interested into.",
-"Informations we report here are about Cases (between march 2019 and May 2021), vaccinations, retail activities and mobility in the city."
+"Informations we report here are about Cases (between march 2019 and May 2021), vaccinations, retail activities and mobility in the city. The notebook link to GitHub of project is at the bottom left."
 ]
 email = "you@yoursite.com"
 
