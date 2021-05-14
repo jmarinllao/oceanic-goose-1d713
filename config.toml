@@ -39,4 +39,4 @@ email = "you@yoursite.com"
   url = "contact/"
 
   [params.social]
-  github = "full profile url in github"
+  github = "https://github.com/jmarinllao/SocialData/blob/master/SDAV_LondCov.ipynb"
