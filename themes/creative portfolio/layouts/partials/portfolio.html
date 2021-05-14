@@ -134,34 +134,11 @@ Traffic by car rises with the uprising of the restrictions, imposing over the re
 With the restrictions applied again in November, a drastic devastation was shown, although with an incidence of greater transit at the levels of the first confinement, probably because in this case they are dealt with more permissive measures.
                             </p>
                           </div>
+                          
             </div>
             
             
-          {{ range .Data.Pages }}
-              <div class="col-xs-6 masonry-item">
-                  <div class="box-masonry">
-                      {{ if and (isset .Params "image") .Params.image }}
-                        {{ if eq .Params.showonlyimage true }}
-                        <a title="" class="box-masonry-image">
-                        {{ else }}
-                        <a  title="" class="box-masonry-image ">
-                        {{ end }}
-                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
-                        </a>
-                      {{ end }}
-                      {{ if eq .Params.showonlyimage true }}
-                      <div class="box-masonry-hover-text-header">
-                      {{ else }}
-                      <div class="box-masonry-text">
-                      {{ end }}
-                          <h4>{{ .Title }}</a></h4>
-                          <div class="box-masonry-description">
-                           
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          {{ end }}
+         
         </div>
     </div>
 </div>
