@@ -18,7 +18,7 @@ sidebarAbout = [
 "Selected visualizations (to see all check notebook) paired with their descriptive text highlight the main facts found through the analysis of the London Government data [reference at the bottom left]. ",
 "The focus is on interactive visualization. This help the user to higlight easilly the factors may be more interested into.",
 "The reported here (between march 2020 and May 2021) are about:",
-"COVID-Cases ",
+"-COVID-Cases ",
 "Vaccinations",
 "Retail activities",
 "Mobility in the city.",
