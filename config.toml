@@ -14,7 +14,7 @@ style = "default"
 description = "Describe your website"
 copyright = "&copy;2021 Social Data Analaysis and Viz DTU"
 sidebarAbout = [
-  "<p><strong>Hereby we analyze the socio-economical impact of COVID-19 cases in London and give an overview of the main trends and aspects.</strong></p>",
+  "<p><strong>Hereby the socio-economical impact of COVID-19 cases in London and give an overview of the main trends and aspects.</strong></p>",
 "The data examined is and provided by the London Government data [reference at the bottom left] for the window of time February 2020 and May 2021:",
 "-<strong>COVID INDICATORS:</strong> Cases and Vaccinations",
 "-<strong>SOCIO ECONOMIC FACTORS:</strong> Retail activity and Transport reports",
