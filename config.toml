@@ -19,7 +19,8 @@ sidebarAbout = [
 "The focus is on interactive visualization. This help the user to higlight easilly the factors may be more interested into.",
 "The reported here (between march 2020 and May 2021) are about:",
 "-COVID INDICATORS: Cases and Vaccinations",
-"-SOCIO ECONOMIC FACTORS: Retail activity and Transport ",
+"-SOCIO ECONOMIC FACTORS: Retail activity and Transport reports",
+"This division is followed by the sections/columns of this webpage. In last section then we explore the link between them",
 " Not all views were included into the webpage in order to not overwhelm the user, since we thought that the webpage only consisted of one main page (no subindexed pages).",
 "<strong>The notebook link to the project's GitHub repository is at the bottom left icon.</strong>"
 
