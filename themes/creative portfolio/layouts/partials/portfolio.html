@@ -186,6 +186,57 @@ new Runtime().module(define, name => {
   if (name === "chartChange") return new Inspector(document.querySelector("#observablehq-chartChange-6bd30bef"));
 });
 </script>
+<style> 
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 30px;
+  border-radius: 4px;
+  height: auto;
+  background: rgba(250,250,250, 0.9);
+  border: 1px solid #DDD;
+  padding: 4px 8px;
+  font-size: .85rem;
+  text-align: left;
+}
+
+.eventTip {  max-width: 140px;}
+.chartTip {  max-width: 240px;}
+
+.tip-values {  
+font-weight: bold;
+color: #787878;
+}
+.tip-values .secondary{   
+font-weight: normal;
+}
+
+.tip-table {
+   font-size: 12px;
+   text-align: right;
+   color: #787878;
+}
+
+.tip-table td, .tip-table th {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.tip-table th {
+  font-size: 10px;
+  text-align: right;
+  color: #AAA;
+  vertical-align: bottom;
+}
+
+.tip-table .row-header {
+  text-align: left;
+}
+
+.tip-table .primary {
+  font-weight: bold;
+}
+</style>
                           <div class="box-masonry-description">
                             <p>
                              <p><strong>Evolution of transport activity  during the pandemic.</strong></p>
