@@ -247,14 +247,18 @@ Then <strong>groceries and pharmacy </strong>are the most 'secure' business, not
 }">
 </iframe> 
 
+<div id="observablehq-viewof-changeCheckbox-eff67d64"></div>
+<div id="observablehq-chartChange-eff67d64"></div>
+<p>Credit: <a href="https://observablehq.com/@jmarinllao/untitled/5"> by SDAV</a></p>
 
-<div width="20%" height="650"  id="observablehq-chartChange-6bd30bef"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@jmarinllao/untitled/4.js?v=3";
+import define from "https://api.observablehq.com/@jmarinllao/untitled/5.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "chartChange") return new Inspector(document.querySelector("#observablehq-chartChange-6bd30bef"));
+  if (name === "viewof changeCheckbox") return new Inspector(document.querySelector("#observablehq-viewof-changeCheckbox-eff67d64"));
+  if (name === "chartChange") return new Inspector(document.querySelector("#observablehq-chartChange-eff67d64"));
 });
+</script>
 </script>
 <style> 
 .toolTip {
