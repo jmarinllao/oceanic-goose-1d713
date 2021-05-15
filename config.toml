@@ -16,8 +16,9 @@ copyright = "&copy;2021 Social Data Analaysis and Viz DTU"
 sidebarAbout = [
   "<p><strong>The socio-economical impact of COVID-19 cases in London is hereby analyzed, giving an insight on the main trends and aspects.</strong></p>",
 "The examined data is provided by the London Government data [reference at the bottom left] for the window of time from February 2020 to May 2021:",
-"The following division is followed by the <strong>sections/columns of this webpage.</strong> In <strong>last section</strong> then we explore the link between the previous two.",
+"The following division is followed by the <strong>sections/columns of this webpage.</strong>",
 "-<strong>COVID INDICATORS:</strong> Cases and Vaccinations",
+"In <strong>last section</strong> then we explore the link between the previous two."",
 "-<strong>SOCIO ECONOMIC FACTORS:</strong> Retail activity and Transport reports",
 "The focus is on interactive visualization. This help the user to higlight easilly the factors may be more interested into. Selected visualizations (to see all check notebook) paired with their descriptive text highlight the main facts found through the analysis.",
 "Not all views were included into the webpage in order to not overwhelm the user, since we thought that the webpage only consisted of one main page (no subindexed pages).",
