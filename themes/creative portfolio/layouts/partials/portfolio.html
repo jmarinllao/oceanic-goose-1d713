@@ -246,8 +246,6 @@ Then <strong>groceries and pharmacy </strong>are the most 'secure' business, not
   text-align: left;
 }">
 </iframe> 
-
-<div id="observablehq-viewof-changeCheckbox-eff67d64"></div>
 <div id="observablehq-chartChange-eff67d64"></div>
 <p>Credit: <a href="https://observablehq.com/@jmarinllao/untitled/5"> by SDAV</a></p>
 
@@ -255,7 +253,6 @@ Then <strong>groceries and pharmacy </strong>are the most 'secure' business, not
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@jmarinllao/untitled/5.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "viewof changeCheckbox") return new Inspector(document.querySelector("#observablehq-viewof-changeCheckbox-eff67d64"));
   if (name === "chartChange") return new Inspector(document.querySelector("#observablehq-chartChange-eff67d64"));
 });
 </script>
