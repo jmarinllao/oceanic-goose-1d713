@@ -19,7 +19,7 @@ sidebarAbout = [
 "The following division is followed by the <strong>sections/columns of this webpage.</strong>",
 "-<strong>COVID INDICATORS:</strong> Cases and Vaccinations",
 "-<strong>SOCIOECONOMIC FACTORS:</strong> Retail activity and Transport reports",
-"-<strong>COVID  SOCIOECONOMIC FACTORS RELATION:</strong> Exploring the influence between the previous two.",
+"-<strong>COVID and SOCIOECONOMIC FACTORS RELATION:</strong> Exploring the influence between the previous two.",
 "The focus is on interactive visualization. This help the user to higlight easilly the factors may be more interested into. Selected visualizations (to see all check notebook) paired with their descriptive text highlight the main facts found through the analysis.",
 "Not all views were included into the webpage in order to not overwhelm the user, since we thought that the webpage only consisted of one main page (no subindexed pages). <strong>The notebook link to the project's GitHub repository is at the bottom left icon.</strong>"
 ]
