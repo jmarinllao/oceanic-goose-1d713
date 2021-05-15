@@ -24,7 +24,7 @@ sidebarAbout = [
 "<strong>The notebook link to the project's GitHub repository is at the bottom left icon.</strong>"
 ]
 email = "you@yoursite.com"
-Hereb
+
   [[params.navlinks]]
   image = "interface/LondonCOVTitle.png"
 
