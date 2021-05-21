@@ -1,94 +1,359 @@
-<div class="col-xs-9.6 content-column">
+
+<script language="JavaScript">
+<!--
+function autoResize(id){
+    var newheight;
+    var newwidth;
+
+    if(document.getElementById){
+        newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
+        newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
+    }
+
+    document.getElementById(id).height= (newheight) + "px";
+    document.getElementById('532aa562-097b-430a-9848-7f1505ff2f15').width= (newwidth) -250 + "px";
+}
+//-->
+</script>
+
+<div class="col-xs-9.6 contzent-column">
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
         <div class="row">
-            <div class="col-xs-5 masonry-item">
+        <div class="col-xs-6 masonry-item">
+    <pre class="sidebar-heading" style="background-color:#1038CF;color:white">
+SOCIOECONOMIC FACTORS: Activity reports</a>
+</pre>
+</div>
+<div class="col-xs-6 masonry-item">
+    <pre class="sidebar-heading" style="background-color:#FFC300;color:white">RELATION COVID - SOCIOECONMIC FACTORS</a>
+</pre>
+</div>
+</div>
+</div>
+
+    <div class="grid">
+        <div class="row">
+            <div class="col-xs-6 masonry-item">
                   <div class="box-masonry">
                       {{ if eq .Params.showonlyimage true }}
                       <div class="box-masonry-hover-text-header">
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                          <h4>Retail activity change</a></h4>
+                          <iframe width="125%" height="780" frameborder="0"
+  src="https://observablehq.com/embed/@jmarinllao/untitled/4?cells=viewof+changeCheckbox%2CchartChange"></iframe>
+<div width="20%" height="650"  id="observablehq-chartChange-6bd30bef"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@jmarinllao/untitled/4.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chartChange") return new Inspector(document.querySelector("#observablehq-chartChange-6bd30bef"));
+});
+</script>
+<style> 
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 30px;
+  border-radius: 4px;
+  height: auto;
+  background: rgba(250,250,250, 0.9);
+  border: 1px solid #DDD;
+  padding: 4px 8px;
+  font-size: .85rem;
+  text-align: left;
+}
+
+.eventTip {  max-width: 140px;}
+.chartTip {  max-width: 240px;}
+
+.tip-values {  
+font-weight: bold;
+color: #787878;
+}
+.tip-values .secondary{   
+font-weight: normal;
+}
+
+.tip-table {
+   font-size: 12px;
+   text-align: right;
+   color: #787878;
+}
+
+.tip-table td, .tip-table th {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.tip-table th {
+  font-size: 10px;
+  text-align: right;
+  color: #AAA;
+  vertical-align: bottom;
+}
+
+.tip-table .row-header {
+  text-align: left;
+}
+
+.tip-table .primary {
+  font-weight: bold;
+}
+</style>
                           <div class="box-masonry-description">
                             <p>
-                                {{ if .Description }}
-                                  {{ .Description }}
-                                {{ else }}
-                                  {{ .Summary }}
-                                {{ end }}
+                            <p><strong>Activity reports stacked Linechart plotting the temporal retail changes during the pandemic.</strong></p>
+<p>The <strong>two above Line charts plot the same</strong> but allow to have two diferent views on the data (one more width extended to explore longitudinal trends, and the other one more compacted, being able to explore the stacked trends). Mouseover the second plot to expand information.</p>
+<p>A timeline is rendered with the diferent relevant events and periods that distinguished the pandemic cicles and the correspondent restrictions, being able to interactively explore them with their description at the bottom to assess the social activity trends and impact. <a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pd"> [Timeline of UK lockdowns]</a>.</p>
+<p>INSIGHTS: This analysis is further detailed since we base our predcictive model [explained in last section] in such dimesion.</p> 
+<ol>
+<li><strong>Starting from a similar average activity</strong> in all sectors on the first of March, when the virus did not expanded yet through London, we see the downfall of all sectors in different intensities, with the exception of remote/home work which was one of the main results/peculiarities of the pandemic (study/work from home!). 
+<li>We can see the <strong>peaks prior to lockdown</strong> in grocery (where the population was supplied by these -especially toilet paper as reported in the media-) and the beginning of the decrease in the rest of the activities. Weekend peaks are also observed, especially in ‘Social’. </a></li>
+<li>Then the <strong>drastic declieve</strong> hit to all activities with the imposition of the first lockdown, with the most affected sectors being reservations for restaurants and and ‘social’</li>
+<li>The  <strong>less drastic change was for grocery and pharmacy</strong> products. It is also observed that while during the lockdown the most affected sectors remain stationary with very low activity, meanwhile both grocery and recreational progressively recovers, remaining grocery with a significantly higher activity.</li>
+<li>With the <strong>lifting of the first lockdown</strong>, all sectors are exploring a linear recovery during the summer, but without having recovered the activity of pre-pandemic 'normality', if several points -outliers- are observed, probably due to the holiday periods and back to work. Grocery stores are still ahead.</a></li>
+<li>Given the restrictions applied with the <strong>second September</strong>  wave, the two most punished sectors 'social' and 'restaurant reservations' return to low levels of lockdown, and trade and recreation also fall, while grocery and pharmacist products do not experience in this case any downfall. </li>
+<li><strong>Christmas peaks</strong> are noticed, suposing a recovery specialy for Social and Restaurants.
+<li>An overall <strong>declieve after Christmas</strong> for all activities with a similar downfall like first lookdown is observed, implying a  period of low activity due to the application of restrictions. Nevertheless the activity is not at minimums like in 2020, probably because the restrictions were more permisible than strict lockdown related.</li>
+<li>Finally a <strong>(post)-pandemic recovery</strong> is noticed from March on, almost recovering prepandemic activity. It may be due to the vaccinations as later exposed, the raise of temperatures in spring or to the effectiveness of restrictions. </li>
+</ol>
+</br>
+</br>
+</br>
+</br>     
+</br>                    
+
                             </p>
                           </div>
                       </div>
-                      <iframe width="100%" height="634" frameborder="0"
-  src="https://observablehq.com/embed/@jmarinllao/icelandic-population-by-age-1841-2019?cells=viewof+year%2Cchart"></iframe>
                   </div>
             </div>
-            <div class="col-xs-5 masonry-item">
-                  <div class="box-masonry">
+            <div class="col-xs-6 masonry-item" >
+                  <div class="box-masonry" style="background-color:#F8EFD5">
+                      {{ if and (isset .Params "image") .Params.image }}
+                        {{ if eq .Params.showonlyimage true }}
+                        <a title="" class="box-masonry-image">
+                        {{ else }}
+                        <a  title="" class="box-masonry-image ">
+                        {{ end }}
+                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                        </a>
+                      {{ end }}
                       {{ if eq .Params.showonlyimage true }}
                       <div class="box-masonry-hover-text-header">
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                          <h4>Predict retail afluency</a></h4>
+                          <strong>Do you own a retail in London?</strong>
+                          </br>
+                          <strong>Do you plan to start up a business in a certain borough?</strong>
+                          </br>
+                          </br>
+                          Try our tool to predict a retail activity selecting a COVID level/rate from the range bar and a borough of interest from the selection desplegable. 
+                         </br>
+                         </br>
+                         
+                        It may help you to explore competitive areas or have an idea on your business performance.
+                         </br>
+                         </br>
                           <div class="box-masonry-description">
-                            <p>
-                                {{ if .Description }}
-                                  {{ .Description }}
-                                {{ else }}
-                                  {{ .Summary }}
-                                {{ end }}
+                           <div id="observablehq-viewof-barchart-2567dfba"></div>
+<div id="observablehq-viewof-weekSlider-2567dfba"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@jmarinllao/flu-mcv.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof barchart") return new Inspector(document.querySelector("#observablehq-viewof-barchart-2567dfba"));
+  if (name === "viewof weekSlider") return new Inspector(document.querySelector("#observablehq-viewof-weekSlider-2567dfba"));
+  return ["worldViewUpdater"].includes(name);
+});
+</script>
+ <div class="box-masonry-description">
+ <p><strong>Customizable Barchart with the predictions from the ML model implemented in the Project [consult Notebook for further details]. The COVID level range metric corresponds to a transformation of daily cases by borough [i.e. (daily_cases_by_borough/10)^2 since we corroborated the log2 distribution on cases]. This transformation was performed in order to adapt the amount of cases to a 0-100 range, which we considered was a more user-oriented measurement. Finaly, borough selection desplegable allows to the user select the neighbourhood of interest, when it is null shows the counts of all city. 
+ The view plots the performance of “Grocery and pharmacy”, “Social”, “Restaurant” and “Restaurant and recreation” according to a COVID level. The retail activity prediction is given by the selected 'COVID-level' and vaccines administered on the last date imput in the collected data.
+ </p>
+ <p> INSIGHTS:</p></strong>
+  <li> The lower the daily cases and the higher the vaccines doses are, the lower the COVID level will be.  
+    <li> In the dropdown list, a neighbourhood can be selected and the performance for each business will be calculated for that specific neighbourhood. 
+    <li> It is interesting to note that, no matter the neighbourhood or COVID level, the performance of <strong>groceries and pharmacy</strong> is the highest within a high level of COVID. 
+    <li> On the other hand, <strong>social and restaurants</strong> are the ones that varies the most depending on COVID level. These variations are mainly due to restrictions. The higher the COVID cases are, the stricter the restrictions get. When the COVID cases stay low, then restaurants get the advantage.
+    <li> Contrary to this, <strong>retail and recreation</strong> seems to be the kind of business with most difficulties to recover, since even with the lowest COVID level, remains only around 80 for all neighbourhoods. 
+    <li> Restrictions affect differently to each kind of businesses. Groceries and pharmacies are not affected by restrictions they can remain open even during the lockdowns. As for retail, it is affected by restrictions but there is still the option for online shopping, so it makes sense that the performance does not change that much according to COVID level. Lastly.
+<br/>
+<br/>
+Then <strong>groceries and pharmacy </strong>are the most 'secure' business, not being much affected by pandemic factors.
+</ol>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
                             </p>
                           </div>
-                      </div>
-                      <iframe width="100%" height="850" frameborder="0"
-  src="/Bokeh.html"></iframe>
-                  </div>
-            </div>
-            <div class="col-xs-5 masonry-item">
-                  <div class="box-masonry">
-                      {{ if eq .Params.showonlyimage true }}
-                      <div class="box-masonry-hover-text-header">
-                      {{ else }}
-                      <div class="box-masonry-text">
-                      {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                          <div class="box-masonry-description">
-                            <p>
-                                {{ if .Description }}
-                                  {{ .Description }}
-                                {{ else }}
-                                  {{ .Summary }}
-                                {{ end }}
-                            </p>
-                          </div>
-                      </div>
-                          <img src="/img/Plots/MapVaccines1.png" alt="COVID">
-                  </div>
-            </div>
-          {{ range .Data.Pages }}
-              <div class="col-xs-5 masonry-item">
-                  <div class="box-masonry">
-                      {{ if eq .Params.showonlyimage true }}
-                      <div class="box-masonry-hover-text-header">
-                      {{ else }}
-                      <div class="box-masonry-text">
-                      {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                          <div class="box-masonry-description">
-                            <p>
-                                {{ if .Description }}
-                                  {{ .Description }}
-                                {{ else }}
-                                  {{ .Summary }}
-                                {{ end }}
-                            </p>
                           </div>
                       </div>
                   </div>
               </div>
-          {{ end }}
-        </div>
+              
+            <div class="col-xs-6 masonry-item">
+                  <div class="box-masonry">
+                      {{ if eq .Params.showonlyimage true }}
+                      <div class="box-masonry-hover-text-header">
+                      {{ else }}
+                      <div class="box-masonry-text">
+                      {{ end }}
+                          <h4>Overview and conclusion</a></h4>
+                          <iframe width="102%" height="625"  frameborder="0"  id="iframe1" 
+  src="/Bokeh.html"></iframe>
+                          <div class="box-masonry-description">
+                            <p>
+<p><strong>This plot reports the main socio-economical indicators. We relate them with vaccinations, covid19 cases and Lockdown measures. Everything is scaled according to covid-19 cases. They activities are measured as increase or decrease in percentage of volume of affairs.</strong></p>
+<p>The boxed areas are the periods when Great britain faced the <strong>strongest</strong> period of restrictions. <a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pd"> [Timeline of UK lockdowns]</a> Anyway minor restrictions went on for periods out of the lockdowns, clearly shown by many trends.</p>
+<p>INSIGHTS:</p>
+<ol>
+<li>It's interesting to point out the <strong>effectiveness of lockdowns</strong>. Giving a first look of data seem that the first 2 lockdowns didn't helped that much, but seeing the trend of the second (great increase rate) stopping the increasing curve at the beginning it's fundamental. Moreover, we know that "an effective reduction in transmission must have occurred nearly immediately after the tighter lockdown, given the lag time of around 10 days from asymptomatic infection to diagnosis." Taking that into account we can clearly see that after a small time lag infections started to decrease <a href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(20)30201-7/fulltext">[Lockdown timing and efficacy in controlling COVID-19]</a></li>
+<li>Taking a look into activities behavior we can clearly see that, for instance, social econimcal activities had very few volume of affair during lockdowns, due to strict regulamentations of customers number and take-away only. This category is clearly the one that covid had the worse impact to, reducing retail volume dramaticaly for the whole restriction periods.</li>
+<li>Contrarywise, we can see that grocieries and pharmacies after an initial drop in sales volume remained active with a slightly increasing rate. It's important to notice a huge drop in thei sales in late december, obviously related to Christmas days.</li>
+<li><strong>We can clearly see that during weekends we have a decreasing in cases number</strong>, this is due to the fact that "testing is not functioning seven days a week, unlike Covid-19". <a href="https://www.spectator.co.uk/article/covid-19-cases-and-the-weekend-effect"> [Covid-19 cases and the weekend effect]</a></li>
+<li>Another interesting fact is that London (and the whole Great Britain actually) faced much more cases in the lastCovid-19 wave. It's difficult to say why. According to what Time : "experts say [...] the crisis is a result of both the struggle to deal with a new variant estimated to be up to 70% more transmissible, and because of a failure in decisive and strong government leadership. " We can infact clearly see that cases dropped after the last hard restrictions took place. <a href="https://time.com/5929246/uk-coronavirus-third-wave/"> [Third wave of covid in Great Britain]</a></li>
+<li>Least, but not last It's interesting to highlight that decreasing in retail/moving are not directly following covid cases but more follow the restrictions. And that decrease actually stopped the virus. This again shows how much restrictions are important since people without law enforcement do not realize the importance of not spreding the virus.</li>
+</ol>
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+         <div class="col-xs-6 masonry-item">
+                  <div class="box-masonry">
+                      {{ if eq .Params.showonlyimage true }}
+                      <div class="box-masonry-hover-text-header">
+                      {{ else }}
+                      <div class="box-masonry-text">
+                      {{ end }}
+                          <h4>Mobility activity change</a></h4>
+                          <iframe width="119%" height="740" frameborder="0"
+  src="https://observablehq.com/embed/@jmarinllao/untitled/5?cells=viewof+changeCheckbox%2CchartChange" style=".toolTip {
+  position: absolute;
+  display: none;
+  min-width: 30px;
+  border-radius: 4px;
+  height: auto;
+  background: rgba(250,250,250, 0.9);
+  border: 1px solid #DDD;
+  padding: 4px 8px;
+  font-size: .85rem;
+  text-align: left;
+}">
+</iframe> 
+<div id="observablehq-chartChange-eff67d64"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@jmarinllao/untitled/5.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chartChange") return new Inspector(document.querySelector("#observablehq-chartChange-eff67d64"));
+});
+</script>
+<style> 
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 30px;
+  border-radius: 4px;
+  height: auto;
+  background: rgba(250,250,250, 0.9);
+  border: 1px solid #DDD;
+  padding: 4px 8px;
+  font-size: .85rem;
+  text-align: left;
+}
+
+.eventTip {  max-width: 140px;}
+.chartTip {  max-width: 240px;}
+
+.tip-values {  
+font-weight: bold;
+color: #787878;
+}
+.tip-values .secondary{   
+font-weight: normal;
+}
+
+.tip-table {
+   font-size: 12px;
+   text-align: right;
+   color: #787878;
+}
+
+.tip-table td, .tip-table th {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.tip-table th {
+  font-size: 10px;
+  text-align: right;
+  color: #AAA;
+  vertical-align: bottom;
+}
+
+.tip-table .row-header {
+  text-align: left;
+}
+
+.tip-table .primary {
+  font-weight: bold;
+}
+</style>
+                          <div class="box-masonry-description">
+                            <p>
+                             <p><strong>Linear evolution of transport activity in time during the pandemic. </strong>As in the previous plot the <strong>two above Line charts plot the same</strong> but allow to have two diferent views on the data and the <a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pd"> [Timeline of UK lockdowns]</a>.</p>
+ The drastic downfall is noticed in all types of transport at the beginning of the pandemic (but in remote work indicators). In this case however the trends are more homogeneous than in commercial activity case. All types of transport diminish with the first home lockdown, being 'Journeys' the most damaged.
+It is also observed that 'Transit stations' stand out above transport by car, probably because the population sample that did such displacement (e.g. essential workers) do not own a car.
+Traffic by car rises with the drop of restrictions imposed over the rest, probably due that many users considered it safer to avoid contagious, despite denoting a global lower transit from pre-pandemic levels during this Summer.
+With the restrictions applied again in November, a second downfall was shown, although with an incidence of greater transit than the levels of the first confinement, probably because  more permissive measures are applied. Finally notice that with nowadays vaccination plan transportation has not reach a full recovery, as seen in comercial activity, probably because the yet high level of remote work, with the transportation amount that the displacement to work implies. Also maybe due to that some population sectors are still hesitating about displacements.
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+            <div class="box-masonry">
+                {{ if and (isset .Params "image") .Params.image }}
+                {{ if eq .Params.showonlyimage true }}
+                <a title="" class="box-masonry-image">
+                {{ else }}
+                <a  title="" class="box-masonry-image ">
+                {{ end }}
+                    <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                </a>
+                {{ end }}
+                {{ if eq .Params.showonlyimage true }}
+                <div class="box-masonry-hover-text-header">
+                {{ else }}
+                <div class="box-masonry-text">
+                {{ end }}
+                    <h4>Activities correlation</a></h4>
+                    <img src="https://docs.google.com/drawings/d/e/2PACX-1vQsVXO30gaHXksnZo2jh6SyPp2mFGNLfrnp2Rlj86Kk0FQckPjydF5-_1MK1wxIKOUL07amX6WdETos/pub?w=763&amp;h=426">
+                    <div class="box-masonry-description">
+    <p><strong>Correlation matrix between all activity measures in order to explore their influence and linking with the previous insights on socio-economic activity. </strong></p>
+    <li> Inverse correlation between remote work and presential work, then validating that they are supposed to be the oposite.</li>
+    <li> Positive correlations between retail activity and transport, which is justified since displacements imply more economical activity.</li>
+
+                    </div>
+                </div>
+            </div>
+
+            
+            </div>
+ 
+
     </div>
+   
+</div>
 </div>

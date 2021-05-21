@@ -12,10 +12,16 @@ picture  = "static/img/portfolio/business-card-26.jpg"
 [params]
 style = "default"
 description = "Describe your website"
-copyright = "&copy;2016 Your name or company"
+copyright = "&copy;2021 Social Data Analaysis and Viz DTU"
 sidebarAbout = [
-  "We are here to have fun",
-  "Originally from La Cava, currently based yet in La Cava due to COVID."
+  "<p><strong>The socio-economical impact of COVID-19 cases in London is hereby analyzed, giving an insight on the main trends and aspects.</strong></p>",
+"The data examined is provided by the London Government Datastore [reference at the bottom left] for the window of time from February 2020 to May 2021:",
+"The subsequent division is followed by the <strong>sections/columns of this webpage.</strong>",
+"-<strong>COVID INDICATORS:</strong> Cases and Vaccinations.",
+"-<strong>SOCIOECONOMIC FACTORS:</strong> Retail activity and Transport reports.",
+"-<strong>COVID INDICATORS and SOCIOECONOMIC FACTORS RELATION:</strong> Exploring the influence between the previous two.",
+"The focus is on interactive visualization. This help the user to higlight easilly the factors may be more interested into. Selected visualizations (to see all check notebook) paired with their descriptive text highlight the main facts found through the analysis.",
+"Not all views were included into the webpage in order to not overwhelm the user, since we thought that the webpage only consisted of one main page (no subindexed pages). <strong>The notebook link to the project's GitHub repository is at the bottom left icon.</strong>"
 ]
 email = "you@yoursite.com"
 
@@ -35,4 +41,4 @@ email = "you@yoursite.com"
   url = "contact/"
 
   [params.social]
-  github = "full profile url in github"
+  github = "https://github.com/jmarinllao/SocialData/blob/master/SDAV_LondCov.ipynb"
