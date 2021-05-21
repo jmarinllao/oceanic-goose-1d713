@@ -26,35 +26,32 @@ models:
     type: page
     label: Page 2
     match:
-      - portfolio/work7.md
-      - portfolio/work7_copy.md
-      - portfolio/work7_copy_copy.md
-      - remove/work1.md
+      - portfolio/work1.md
+      - portfolio/work2.md
+      - portfolio/work3.md
       - remove/work11.md
-      - remove/work2.md
-      - remove/work3.md
       - remove/work4.md
       - remove/work5.md
       - remove/work6.md
-      - remove/work7_copy_copy.md
+      - remove/work7.md
       - remove/work8.md
       - remove/work9.md
     fields:
-      - type: string
-        name: image
-        label: Image
       - type: boolean
         name: showonlyimage
         label: Showonlyimage
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: string
+        name: image
+        label: Image
       - type: datetime
         name: date
         label: Date
       - type: string
         name: title
         label: Title
-      - type: boolean
-        name: draft
-        label: Draft
       - type: number
         name: weight
         label: Weight
